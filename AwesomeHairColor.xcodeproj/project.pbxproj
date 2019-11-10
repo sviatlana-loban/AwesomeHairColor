@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8441BB852378A66500951947 /* URLExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8441BB842378A66500951947 /* URLExtension.swift */; };
 		84A73B0323783CA900B5CE3F /* VideoHairViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84A73B0223783CA900B5CE3F /* VideoHairViewController.swift */; };
 		84A73B05237841E600B5CE3F /* PhotoLibraryPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84A73B04237841E600B5CE3F /* PhotoLibraryPicker.swift */; };
 		84A73B0C2378526700B5CE3F /* HairColorPredictor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84A73B0B2378526700B5CE3F /* HairColorPredictor.swift */; };
@@ -24,6 +25,7 @@
 		0B339640DFBFF4E9E547B9B4 /* Pods_AwesomeHairColor.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AwesomeHairColor.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		3E67931CF81E72AD24AC8BC8 /* Pods-AwesomeHairColor.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AwesomeHairColor.debug.xcconfig"; path = "Target Support Files/Pods-AwesomeHairColor/Pods-AwesomeHairColor.debug.xcconfig"; sourceTree = "<group>"; };
 		5E7131178A47304BD6182490 /* Pods-AwesomeHairColor.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AwesomeHairColor.release.xcconfig"; path = "Target Support Files/Pods-AwesomeHairColor/Pods-AwesomeHairColor.release.xcconfig"; sourceTree = "<group>"; };
+		8441BB842378A66500951947 /* URLExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLExtension.swift; sourceTree = "<group>"; };
 		84A73B0223783CA900B5CE3F /* VideoHairViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoHairViewController.swift; sourceTree = "<group>"; };
 		84A73B04237841E600B5CE3F /* PhotoLibraryPicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoLibraryPicker.swift; sourceTree = "<group>"; };
 		84A73B0B2378526700B5CE3F /* HairColorPredictor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HairColorPredictor.swift; sourceTree = "<group>"; };
@@ -67,6 +69,14 @@
 			path = Pods;
 			sourceTree = "<group>";
 		};
+		8441BB832378A63D00951947 /* Extenstions */ = {
+			isa = PBXGroup;
+			children = (
+				8441BB842378A66500951947 /* URLExtension.swift */,
+			);
+			path = Extenstions;
+			sourceTree = "<group>";
+		};
 		84B050142376E6F40001F1D0 = {
 			isa = PBXGroup;
 			children = (
@@ -93,6 +103,7 @@
 				84B050442376EED60001F1D0 /* UI */,
 				84B050342376E7480001F1D0 /* Resources */,
 				84B050202376E6F40001F1D0 /* AppDelegate.swift */,
+				8441BB832378A63D00951947 /* Extenstions */,
 			);
 			path = AwesomeHairColor;
 			sourceTree = "<group>";
@@ -252,6 +263,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				84B050532376EED60001F1D0 /* HairColorTableViewCell.swift in Sources */,
+				8441BB852378A66500951947 /* URLExtension.swift in Sources */,
 				84B050482376EED60001F1D0 /* ViewController.swift in Sources */,
 				84A73B0323783CA900B5CE3F /* VideoHairViewController.swift in Sources */,
 				84B050212376E6F40001F1D0 /* AppDelegate.swift in Sources */,

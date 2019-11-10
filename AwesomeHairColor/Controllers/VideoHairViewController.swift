@@ -10,7 +10,6 @@ import UIKit
 import AVKit
 import AVFoundation
 import Fritz
-import MobileCoreServices
 
 class VideoHairViewController: UIViewController, HairColorPredictor {
 
@@ -116,29 +115,7 @@ extension VideoHairViewController {
     }
 }
 
-extension URL {
-    var isImage: Bool {
-        let fileExtension = self.pathExtension
-        if !fileExtension.isEmpty {
-            let cfFileExtension: CFString = fileExtension as NSString
-            if let uti = UTTypeCreatePreferredIdentifierForTag(kUTTagClassFilenameExtension, cfFileExtension, nil)?.takeRetainedValue() {
-                return UTTypeConformsTo(uti, kUTTypeImage)
-            }
-        }
-        return false
-    }
 
-    var isMovie: Bool {
-        let fileExtension = self.pathExtension
-        if !fileExtension.isEmpty {
-            let cfFileExtension: CFString = fileExtension as NSString
-            if let uti = UTTypeCreatePreferredIdentifierForTag(kUTTagClassFilenameExtension, cfFileExtension, nil)?.takeRetainedValue() {
-                return UTTypeConformsTo(uti, kUTTypeMovie)
-            }
-        }
-        return false
-    }
-}
 
 extension UIImage {
 
