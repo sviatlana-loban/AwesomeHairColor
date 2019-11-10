@@ -7,34 +7,72 @@
 //
 
 import UIKit
+import AVKit
+import AVFoundation
+import Fritz
 
 class VideoHairViewController: UIViewController {
 
     var photoLibraryPicker: PhotoLibraryPicker?
+    var videoPlayer: AVPlayer!
+    internal lazy var visionModel = FritzVisionHairSegmentationModelFast()
 
     override func viewDidLoad() {
         super.viewDidLoad()
+
+    }
+
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
 
         self.photoLibraryPicker = PhotoLibraryPicker(presentationController: self, delegate: self)
         self.photoLibraryPicker?.present(from: view)
     }
     
 
-    /*
-    // MARK: - Navigation
+    func predict(with source: FritzVisionImage) -> UIImage? {
+        guard let result = try? visionModel.predict(source),
+            let mask = result.buildSingleClassMask(forClass: FritzVisionHairClass.hair)
+            else { return nil }
 
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+        let blended = source.blend(
+            withMask: mask,
+            blendKernel: .softLight,
+            opacity: 0.7
+        )
+
+        return blended
     }
-    */
 
 }
 
 extension VideoHairViewController: PhotoLibraryPickerDelegate {
+
     func didSelect(url: URL?) {
-        print(url)
+        guard let url = url else {
+            return
+        }
+
+        // Run prediction on every frame of the video or photo
+        let composition = AVVideoComposition(asset: AVAsset(url: url)) { request in
+            let source = request.sourceImage
+            let fritzImage = FritzVisionImage(image: UIImage(ciImage: source))
+
+            if let maskedImage = self.predict(with: fritzImage) {
+                request.finish(with: maskedImage.ciImage!, context: nil)
+            }
+            else {
+                request.finish(with: source, context: nil)
+            }
+        }
+
+        let videoURL = URL(string: url.absoluteString)
+        videoPlayer = AVPlayer(url: videoURL!)
+        videoPlayer.currentItem!.videoComposition = composition
+        let playerLayer = AVPlayerLayer(player: videoPlayer)
+        playerLayer.frame = view.bounds
+        view.layer.addSublayer(playerLayer)
     }
+    
 
 }
