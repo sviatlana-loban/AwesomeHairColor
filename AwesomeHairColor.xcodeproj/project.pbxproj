@@ -1,0 +1,445 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		84A73B0323783CA900B5CE3F /* VideoHairViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84A73B0223783CA900B5CE3F /* VideoHairViewController.swift */; };
+		84B050212376E6F40001F1D0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84B050202376E6F40001F1D0 /* AppDelegate.swift */; };
+		84B0502A2376E6F50001F1D0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 84B050292376E6F50001F1D0 /* Assets.xcassets */; };
+		84B050362376E7610001F1D0 /* Fritz-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 84B050352376E7610001F1D0 /* Fritz-Info.plist */; };
+		84B050482376EED60001F1D0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84B050382376EED60001F1D0 /* ViewController.swift */; };
+		84B0504E2376EED60001F1D0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84B050402376EED60001F1D0 /* LaunchScreen.storyboard */; };
+		84B0504F2376EED60001F1D0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84B050422376EED60001F1D0 /* Main.storyboard */; };
+		84B050532376EED60001F1D0 /* HairColorTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84B050472376EED60001F1D0 /* HairColorTableViewCell.swift */; };
+		9584D18A9C24F7ABACAE0F4E /* Pods_AwesomeHairColor.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0B339640DFBFF4E9E547B9B4 /* Pods_AwesomeHairColor.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		0B339640DFBFF4E9E547B9B4 /* Pods_AwesomeHairColor.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AwesomeHairColor.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3E67931CF81E72AD24AC8BC8 /* Pods-AwesomeHairColor.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AwesomeHairColor.debug.xcconfig"; path = "Target Support Files/Pods-AwesomeHairColor/Pods-AwesomeHairColor.debug.xcconfig"; sourceTree = "<group>"; };
+		5E7131178A47304BD6182490 /* Pods-AwesomeHairColor.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AwesomeHairColor.release.xcconfig"; path = "Target Support Files/Pods-AwesomeHairColor/Pods-AwesomeHairColor.release.xcconfig"; sourceTree = "<group>"; };
+		84A73B0223783CA900B5CE3F /* VideoHairViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoHairViewController.swift; sourceTree = "<group>"; };
+		84B0501D2376E6F40001F1D0 /* AwesomeHairColor.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AwesomeHairColor.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		84B050202376E6F40001F1D0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		84B050292376E6F50001F1D0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		84B0502E2376E6F50001F1D0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		84B050352376E7610001F1D0 /* Fritz-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "Fritz-Info.plist"; sourceTree = "<group>"; };
+		84B050382376EED60001F1D0 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		84B050412376EED60001F1D0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		84B050422376EED60001F1D0 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		84B050472376EED60001F1D0 /* HairColorTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HairColorTableViewCell.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		84B0501A2376E6F40001F1D0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9584D18A9C24F7ABACAE0F4E /* Pods_AwesomeHairColor.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		5381BC36C257146B06BE2D2D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0B339640DFBFF4E9E547B9B4 /* Pods_AwesomeHairColor.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		68A2209627997C55E7650CB1 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				3E67931CF81E72AD24AC8BC8 /* Pods-AwesomeHairColor.debug.xcconfig */,
+				5E7131178A47304BD6182490 /* Pods-AwesomeHairColor.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		84B050142376E6F40001F1D0 = {
+			isa = PBXGroup;
+			children = (
+				84B0501F2376E6F40001F1D0 /* AwesomeHairColor */,
+				84B0501E2376E6F40001F1D0 /* Products */,
+				68A2209627997C55E7650CB1 /* Pods */,
+				5381BC36C257146B06BE2D2D /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		84B0501E2376E6F40001F1D0 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				84B0501D2376E6F40001F1D0 /* AwesomeHairColor.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		84B0501F2376E6F40001F1D0 /* AwesomeHairColor */ = {
+			isa = PBXGroup;
+			children = (
+				84B050372376EED60001F1D0 /* Controllers */,
+				84B0503D2376EED60001F1D0 /* Storyboards */,
+				84B050442376EED60001F1D0 /* UI */,
+				84B050342376E7480001F1D0 /* Resources */,
+				84B050202376E6F40001F1D0 /* AppDelegate.swift */,
+			);
+			path = AwesomeHairColor;
+			sourceTree = "<group>";
+		};
+		84B050342376E7480001F1D0 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				84B050352376E7610001F1D0 /* Fritz-Info.plist */,
+				84B050292376E6F50001F1D0 /* Assets.xcassets */,
+				84B0502E2376E6F50001F1D0 /* Info.plist */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		84B050372376EED60001F1D0 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				84B050382376EED60001F1D0 /* ViewController.swift */,
+				84A73B0223783CA900B5CE3F /* VideoHairViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		84B0503D2376EED60001F1D0 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				84B050402376EED60001F1D0 /* LaunchScreen.storyboard */,
+				84B050422376EED60001F1D0 /* Main.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		84B050442376EED60001F1D0 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				84B050472376EED60001F1D0 /* HairColorTableViewCell.swift */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		84B0501C2376E6F40001F1D0 /* AwesomeHairColor */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 84B050312376E6F50001F1D0 /* Build configuration list for PBXNativeTarget "AwesomeHairColor" */;
+			buildPhases = (
+				440CBD5312947938B41FBB09 /* [CP] Check Pods Manifest.lock */,
+				84B050192376E6F40001F1D0 /* Sources */,
+				84B0501A2376E6F40001F1D0 /* Frameworks */,
+				84B0501B2376E6F40001F1D0 /* Resources */,
+				3EA4E3F4A42F71285B983190 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = AwesomeHairColor;
+			productName = AwesomeHairColor;
+			productReference = 84B0501D2376E6F40001F1D0 /* AwesomeHairColor.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		84B050152376E6F40001F1D0 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1110;
+				LastUpgradeCheck = 1110;
+				ORGANIZATIONNAME = SLoban;
+				TargetAttributes = {
+					84B0501C2376E6F40001F1D0 = {
+						CreatedOnToolsVersion = 11.1;
+					};
+				};
+			};
+			buildConfigurationList = 84B050182376E6F40001F1D0 /* Build configuration list for PBXProject "AwesomeHairColor" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 84B050142376E6F40001F1D0;
+			productRefGroup = 84B0501E2376E6F40001F1D0 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				84B0501C2376E6F40001F1D0 /* AwesomeHairColor */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		84B0501B2376E6F40001F1D0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				84B0504F2376EED60001F1D0 /* Main.storyboard in Resources */,
+				84B0504E2376EED60001F1D0 /* LaunchScreen.storyboard in Resources */,
+				84B0502A2376E6F50001F1D0 /* Assets.xcassets in Resources */,
+				84B050362376E7610001F1D0 /* Fritz-Info.plist in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		3EA4E3F4A42F71285B983190 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-AwesomeHairColor/Pods-AwesomeHairColor-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-AwesomeHairColor/Pods-AwesomeHairColor-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-AwesomeHairColor/Pods-AwesomeHairColor-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		440CBD5312947938B41FBB09 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-AwesomeHairColor-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		84B050192376E6F40001F1D0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				84B050532376EED60001F1D0 /* HairColorTableViewCell.swift in Sources */,
+				84B050482376EED60001F1D0 /* ViewController.swift in Sources */,
+				84A73B0323783CA900B5CE3F /* VideoHairViewController.swift in Sources */,
+				84B050212376E6F40001F1D0 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		84B050402376EED60001F1D0 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				84B050412376EED60001F1D0 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		84B0502F2376E6F50001F1D0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		84B050302376E6F50001F1D0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		84B050322376E6F50001F1D0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3E67931CF81E72AD24AC8BC8 /* Pods-AwesomeHairColor.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 76UWPS59U6;
+				INFOPLIST_FILE = AwesomeHairColor/Resources/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = by.sloban.AwesomeHairColor;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		84B050332376E6F50001F1D0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5E7131178A47304BD6182490 /* Pods-AwesomeHairColor.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 76UWPS59U6;
+				INFOPLIST_FILE = AwesomeHairColor/Resources/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = by.sloban.AwesomeHairColor;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		84B050182376E6F40001F1D0 /* Build configuration list for PBXProject "AwesomeHairColor" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				84B0502F2376E6F50001F1D0 /* Debug */,
+				84B050302376E6F50001F1D0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		84B050312376E6F50001F1D0 /* Build configuration list for PBXNativeTarget "AwesomeHairColor" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				84B050322376E6F50001F1D0 /* Debug */,
+				84B050332376E6F50001F1D0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 84B050152376E6F40001F1D0 /* Project object */;
+}
