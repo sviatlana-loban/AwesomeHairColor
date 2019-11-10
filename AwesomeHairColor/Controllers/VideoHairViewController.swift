@@ -10,10 +10,13 @@ import UIKit
 
 class VideoHairViewController: UIViewController {
 
+    var photoLibraryPicker: PhotoLibraryPicker?
+
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        self.photoLibraryPicker = PhotoLibraryPicker(presentationController: self, delegate: self)
+        self.photoLibraryPicker?.present(from: view)
     }
     
 
@@ -26,5 +29,12 @@ class VideoHairViewController: UIViewController {
         // Pass the selected object to the new view controller.
     }
     */
+
+}
+
+extension VideoHairViewController: PhotoLibraryPickerDelegate {
+    func didSelect(url: URL?) {
+        print(url)
+    }
 
 }

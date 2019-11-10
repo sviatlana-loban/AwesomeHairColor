@@ -5,9 +5,9 @@ class ViewController: UITableViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.view.backgroundColor = .black
         title = "Let's color!".uppercased()
         tableView.register(HairColorTableViewCell.self, forCellReuseIdentifier: HairColorTableViewCell.reuseId)
+        tableView.tableFooterView = UIView()
         clearsSelectionOnViewWillAppear = true
     }
 
