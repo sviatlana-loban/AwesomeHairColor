@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		84A73B0323783CA900B5CE3F /* VideoHairViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84A73B0223783CA900B5CE3F /* VideoHairViewController.swift */; };
 		84A73B05237841E600B5CE3F /* PhotoLibraryPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84A73B04237841E600B5CE3F /* PhotoLibraryPicker.swift */; };
+		84A73B0C2378526700B5CE3F /* HairColorPredictor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84A73B0B2378526700B5CE3F /* HairColorPredictor.swift */; };
 		84B050212376E6F40001F1D0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84B050202376E6F40001F1D0 /* AppDelegate.swift */; };
 		84B0502A2376E6F50001F1D0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 84B050292376E6F50001F1D0 /* Assets.xcassets */; };
 		84B050362376E7610001F1D0 /* Fritz-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 84B050352376E7610001F1D0 /* Fritz-Info.plist */; };
@@ -25,6 +26,7 @@
 		5E7131178A47304BD6182490 /* Pods-AwesomeHairColor.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AwesomeHairColor.release.xcconfig"; path = "Target Support Files/Pods-AwesomeHairColor/Pods-AwesomeHairColor.release.xcconfig"; sourceTree = "<group>"; };
 		84A73B0223783CA900B5CE3F /* VideoHairViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoHairViewController.swift; sourceTree = "<group>"; };
 		84A73B04237841E600B5CE3F /* PhotoLibraryPicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoLibraryPicker.swift; sourceTree = "<group>"; };
+		84A73B0B2378526700B5CE3F /* HairColorPredictor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HairColorPredictor.swift; sourceTree = "<group>"; };
 		84B0501D2376E6F40001F1D0 /* AwesomeHairColor.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AwesomeHairColor.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		84B050202376E6F40001F1D0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		84B050292376E6F50001F1D0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -110,6 +112,7 @@
 			children = (
 				84B050382376EED60001F1D0 /* ViewController.swift */,
 				84A73B0223783CA900B5CE3F /* VideoHairViewController.swift */,
+				84A73B0B2378526700B5CE3F /* HairColorPredictor.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -252,6 +255,7 @@
 				84B050482376EED60001F1D0 /* ViewController.swift in Sources */,
 				84A73B0323783CA900B5CE3F /* VideoHairViewController.swift in Sources */,
 				84B050212376E6F40001F1D0 /* AppDelegate.swift in Sources */,
+				84A73B0C2378526700B5CE3F /* HairColorPredictor.swift in Sources */,
 				84A73B05237841E600B5CE3F /* PhotoLibraryPicker.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
