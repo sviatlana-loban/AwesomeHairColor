@@ -10,13 +10,14 @@ import UIKit
 import AVKit
 import AVFoundation
 import Fritz
+import MobileCoreServices
 
 class VideoHairViewController: UIViewController, HairColorPredictor {
 
     var color: HairColor!
 
     var photoLibraryPicker: PhotoLibraryPicker?
-    var videoPlayer: AVPlayer!
+    var videoPlayer: AVPlayer?
     internal lazy var visionModel = FritzVisionHairSegmentationModelFast()
 
     override func viewDidLoad() {
@@ -39,6 +40,42 @@ extension VideoHairViewController: PhotoLibraryPickerDelegate {
             return
         }
 
+        if url.isImage {
+            startPhotoPrediction(for: url)
+        } else if url.isMovie {
+            startVideoPrediction(for: url)
+        } else {
+            fatalError("Error file extension")
+        }
+    }
+
+    internal func startPhotoPrediction(for url: URL) {
+        var image: UIImage?
+        if let imageData = try? Data(contentsOf: url) {
+            image = UIImage(data: imageData)
+        }
+
+        guard let source = image else {
+            return
+        }
+
+        let fritzImage = FritzVisionImage(image: source)
+        if let maskedImage = self.predict(with: fritzImage) {
+            showImage(maskedImage)
+        } else {
+            showImage(source)
+        }
+    }
+
+    internal func showImage(_ image: UIImage) {
+        let imageView = UIImageView(frame: view.frame)
+        let newImage = image.convert(ciImage: image.ciImage!)
+        imageView.image = UIImage(cgImage: newImage.cgImage!, scale: 1.0, orientation: UIImage.Orientation.right)
+        imageView.contentMode = .scaleAspectFit
+        view.addSubview(imageView)
+    }
+
+    internal func startVideoPrediction(for url: URL) {
         // Run prediction on every frame of the video or photo
         let composition = AVVideoComposition(asset: AVAsset(url: url)) { request in
             let source = request.sourceImage
@@ -54,11 +91,62 @@ extension VideoHairViewController: PhotoLibraryPickerDelegate {
 
         let videoURL = URL(string: url.absoluteString)
         videoPlayer = AVPlayer(url: videoURL!)
-        videoPlayer.currentItem!.videoComposition = composition
+        videoPlayer?.currentItem?.videoComposition = composition
         let playerLayer = AVPlayerLayer(player: videoPlayer)
         playerLayer.frame = view.bounds
         view.layer.addSublayer(playerLayer)
-    }
-    
 
+        NotificationCenter.default.addObserver(self, selector: #selector(endedVideoPlaying(_:)), name: NSNotification.Name.AVPlayerItemDidPlayToEndTime, object: self.videoPlayer?.currentItem)
+        startPlaying()
+    }
+}
+
+extension VideoHairViewController {
+
+    func startPlaying() {
+        guard let videoPlayer = videoPlayer else { return }
+        videoPlayer.play()
+    }
+
+    @objc func endedVideoPlaying(_ notification: Notification) {
+        guard let videoPlayer = videoPlayer else { return }
+        videoPlayer.pause()
+        videoPlayer.seek(to: CMTime.zero)
+        videoPlayer.play()
+    }
+}
+
+extension URL {
+    var isImage: Bool {
+        let fileExtension = self.pathExtension
+        if !fileExtension.isEmpty {
+            let cfFileExtension: CFString = fileExtension as NSString
+            if let uti = UTTypeCreatePreferredIdentifierForTag(kUTTagClassFilenameExtension, cfFileExtension, nil)?.takeRetainedValue() {
+                return UTTypeConformsTo(uti, kUTTypeImage)
+            }
+        }
+        return false
+    }
+
+    var isMovie: Bool {
+        let fileExtension = self.pathExtension
+        if !fileExtension.isEmpty {
+            let cfFileExtension: CFString = fileExtension as NSString
+            if let uti = UTTypeCreatePreferredIdentifierForTag(kUTTagClassFilenameExtension, cfFileExtension, nil)?.takeRetainedValue() {
+                return UTTypeConformsTo(uti, kUTTypeMovie)
+            }
+        }
+        return false
+    }
+}
+
+extension UIImage {
+
+    func convert(ciImage:CIImage) -> UIImage
+    {
+        let context:CIContext = CIContext.init(options: nil)
+        let cgImage:CGImage = context.createCGImage(ciImage, from: ciImage.extent)!
+        let image:UIImage = UIImage.init(cgImage: cgImage)
+        return image
+    }
 }
