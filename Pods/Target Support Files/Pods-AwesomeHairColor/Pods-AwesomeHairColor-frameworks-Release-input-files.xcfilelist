@@ -1,9 +1,0 @@
-${PODS_ROOT}/Target Support Files/Pods-AwesomeHairColor/Pods-AwesomeHairColor-frameworks.sh
-${PODS_ROOT}/FritzBase/Frameworks/FritzCore.framework
-${PODS_ROOT}/FritzBase/Frameworks/Fritz.framework
-${PODS_ROOT}/FritzBase/Frameworks/CoreMLHelpers.framework
-${PODS_ROOT}/FritzBase/Frameworks/FritzManagedModel.framework
-${PODS_ROOT}/FritzBase/Frameworks/FritzVision.framework
-${PODS_ROOT}/FritzVisionHairSegmentationModelFast/Frameworks/FritzVisionHairSegmentationModelFast.framework
-${BUILT_PRODUCTS_DIR}/IGColorPicker/IGColorPicker.framework
-${BUILT_PRODUCTS_DIR}/M13Checkbox/M13Checkbox.framework
