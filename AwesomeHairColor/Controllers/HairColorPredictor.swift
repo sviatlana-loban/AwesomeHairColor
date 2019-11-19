@@ -10,7 +10,7 @@ import Foundation
 import UIKit
 import Fritz
 
-protocol HairColorPredictor {
+protocol HairColorPredictor: class {
 
   var visionModel: FritzVisionHairSegmentationModelFast { get }
   var color: HairColor! { get set }

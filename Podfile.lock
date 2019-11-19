@@ -1,5 +1,4 @@
 PODS:
-  - ColorSlider (4.4)
   - Fritz (4.2.5):
     - Fritz/Vision (= 4.2.5)
   - Fritz/Vision (4.2.5):
@@ -16,25 +15,31 @@ PODS:
     - FritzBase/ManagedModel (= 4.2.5)
   - FritzVisionHairSegmentationModelFast (4.2.3):
     - FritzBase/Vision (~> 4.2.0)
+  - IGColorPicker (0.4.2):
+    - M13Checkbox (~> 3.2.0)
+  - M13Checkbox (3.2.2)
 
 DEPENDENCIES:
-  - ColorSlider (~> 4.4)
   - Fritz (~> 4.2.4)
   - Fritz/VisionSegmentationModel/Hair/Fast
+  - IGColorPicker
 
 SPEC REPOS:
-  https://github.com/cocoapods/specs.git:
-    - ColorSlider
+  https://github.com/CocoaPods/Specs.git:
     - Fritz
     - FritzBase
     - FritzVisionHairSegmentationModelFast
+  trunk:
+    - IGColorPicker
+    - M13Checkbox
 
 SPEC CHECKSUMS:
-  ColorSlider: 9a888e65b871fa1e6a26fadebf4931c949935681
   Fritz: a626749eefdea3f5ead85f9169ef9bff3734e660
   FritzBase: 919d900ae97c74a838ae08fd2121d8c648326d7d
   FritzVisionHairSegmentationModelFast: bf3e422aecd510437cc580379634b168c31ffcb4
+  IGColorPicker: c6d43aa386a9fdc8f958f3bd4e5ab85905242c8a
+  M13Checkbox: a8c2491cfbbca10797925fd0b9154a782bf40d89
 
-PODFILE CHECKSUM: 79144c20e5d1712850eeb8cd51409d3501d31202
+PODFILE CHECKSUM: 77c85ce21f66f5ebf4dd9ed92cb80e0f2fa5598c
 
-COCOAPODS: 1.7.5
+COCOAPODS: 1.8.4

@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		843899EB237D780E00248147 /* ColorPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 843899EA237D780E00248147 /* ColorPicker.swift */; };
+		843899ED237D785600248147 /* UIColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 843899EC237D785600248147 /* UIColorExtension.swift */; };
 		8441BB852378A66500951947 /* URLExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8441BB842378A66500951947 /* URLExtension.swift */; };
 		84A73B0323783CA900B5CE3F /* VideoHairViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84A73B0223783CA900B5CE3F /* VideoHairViewController.swift */; };
 		84A73B05237841E600B5CE3F /* PhotoLibraryPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84A73B04237841E600B5CE3F /* PhotoLibraryPicker.swift */; };
@@ -18,13 +20,15 @@
 		84B0504E2376EED60001F1D0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84B050402376EED60001F1D0 /* LaunchScreen.storyboard */; };
 		84B0504F2376EED60001F1D0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84B050422376EED60001F1D0 /* Main.storyboard */; };
 		84B050532376EED60001F1D0 /* HairColorTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84B050472376EED60001F1D0 /* HairColorTableViewCell.swift */; };
-		9584D18A9C24F7ABACAE0F4E /* Pods_AwesomeHairColor.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0B339640DFBFF4E9E547B9B4 /* Pods_AwesomeHairColor.framework */; };
+		C52E0D7B2488E0560B6A81DE /* Pods_AwesomeHairColor.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 70716A16122DA160EC917EC5 /* Pods_AwesomeHairColor.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		0B339640DFBFF4E9E547B9B4 /* Pods_AwesomeHairColor.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AwesomeHairColor.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		3E67931CF81E72AD24AC8BC8 /* Pods-AwesomeHairColor.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AwesomeHairColor.debug.xcconfig"; path = "Target Support Files/Pods-AwesomeHairColor/Pods-AwesomeHairColor.debug.xcconfig"; sourceTree = "<group>"; };
-		5E7131178A47304BD6182490 /* Pods-AwesomeHairColor.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AwesomeHairColor.release.xcconfig"; path = "Target Support Files/Pods-AwesomeHairColor/Pods-AwesomeHairColor.release.xcconfig"; sourceTree = "<group>"; };
+		6C5FA18D3B231A1C3EB84E63 /* Pods-AwesomeHairColor.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AwesomeHairColor.release.xcconfig"; path = "Target Support Files/Pods-AwesomeHairColor/Pods-AwesomeHairColor.release.xcconfig"; sourceTree = "<group>"; };
+		70716A16122DA160EC917EC5 /* Pods_AwesomeHairColor.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AwesomeHairColor.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		79A7C40A66173A20B5CE42F0 /* Pods-AwesomeHairColor.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AwesomeHairColor.debug.xcconfig"; path = "Target Support Files/Pods-AwesomeHairColor/Pods-AwesomeHairColor.debug.xcconfig"; sourceTree = "<group>"; };
+		843899EA237D780E00248147 /* ColorPicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorPicker.swift; sourceTree = "<group>"; };
+		843899EC237D785600248147 /* UIColorExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColorExtension.swift; sourceTree = "<group>"; };
 		8441BB842378A66500951947 /* URLExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLExtension.swift; sourceTree = "<group>"; };
 		84A73B0223783CA900B5CE3F /* VideoHairViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoHairViewController.swift; sourceTree = "<group>"; };
 		84A73B04237841E600B5CE3F /* PhotoLibraryPicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoLibraryPicker.swift; sourceTree = "<group>"; };
@@ -45,17 +49,17 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9584D18A9C24F7ABACAE0F4E /* Pods_AwesomeHairColor.framework in Frameworks */,
+				C52E0D7B2488E0560B6A81DE /* Pods_AwesomeHairColor.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		5381BC36C257146B06BE2D2D /* Frameworks */ = {
+		5E27AB3C96689A449E007617 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				0B339640DFBFF4E9E547B9B4 /* Pods_AwesomeHairColor.framework */,
+				70716A16122DA160EC917EC5 /* Pods_AwesomeHairColor.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -63,8 +67,8 @@
 		68A2209627997C55E7650CB1 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				3E67931CF81E72AD24AC8BC8 /* Pods-AwesomeHairColor.debug.xcconfig */,
-				5E7131178A47304BD6182490 /* Pods-AwesomeHairColor.release.xcconfig */,
+				79A7C40A66173A20B5CE42F0 /* Pods-AwesomeHairColor.debug.xcconfig */,
+				6C5FA18D3B231A1C3EB84E63 /* Pods-AwesomeHairColor.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -73,6 +77,7 @@
 			isa = PBXGroup;
 			children = (
 				8441BB842378A66500951947 /* URLExtension.swift */,
+				843899EC237D785600248147 /* UIColorExtension.swift */,
 			);
 			path = Extenstions;
 			sourceTree = "<group>";
@@ -83,7 +88,7 @@
 				84B0501F2376E6F40001F1D0 /* AwesomeHairColor */,
 				84B0501E2376E6F40001F1D0 /* Products */,
 				68A2209627997C55E7650CB1 /* Pods */,
-				5381BC36C257146B06BE2D2D /* Frameworks */,
+				5E27AB3C96689A449E007617 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -142,6 +147,7 @@
 			children = (
 				84B050472376EED60001F1D0 /* HairColorTableViewCell.swift */,
 				84A73B04237841E600B5CE3F /* PhotoLibraryPicker.swift */,
+				843899EA237D780E00248147 /* ColorPicker.swift */,
 			);
 			path = UI;
 			sourceTree = "<group>";
@@ -153,11 +159,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 84B050312376E6F50001F1D0 /* Build configuration list for PBXNativeTarget "AwesomeHairColor" */;
 			buildPhases = (
-				440CBD5312947938B41FBB09 /* [CP] Check Pods Manifest.lock */,
+				2BF1DA16BA8887A1376FB8AB /* [CP] Check Pods Manifest.lock */,
 				84B050192376E6F40001F1D0 /* Sources */,
 				84B0501A2376E6F40001F1D0 /* Frameworks */,
 				84B0501B2376E6F40001F1D0 /* Resources */,
-				3EA4E3F4A42F71285B983190 /* [CP] Embed Pods Frameworks */,
+				30A5A1913A8588643CD17BDF /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -216,24 +222,7 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		3EA4E3F4A42F71285B983190 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-AwesomeHairColor/Pods-AwesomeHairColor-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-AwesomeHairColor/Pods-AwesomeHairColor-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-AwesomeHairColor/Pods-AwesomeHairColor-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		440CBD5312947938B41FBB09 /* [CP] Check Pods Manifest.lock */ = {
+		2BF1DA16BA8887A1376FB8AB /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -255,6 +244,23 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
+		30A5A1913A8588643CD17BDF /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-AwesomeHairColor/Pods-AwesomeHairColor-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-AwesomeHairColor/Pods-AwesomeHairColor-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-AwesomeHairColor/Pods-AwesomeHairColor-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -263,9 +269,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				84B050532376EED60001F1D0 /* HairColorTableViewCell.swift in Sources */,
+				843899EB237D780E00248147 /* ColorPicker.swift in Sources */,
 				8441BB852378A66500951947 /* URLExtension.swift in Sources */,
 				84B050482376EED60001F1D0 /* ViewController.swift in Sources */,
 				84A73B0323783CA900B5CE3F /* VideoHairViewController.swift in Sources */,
+				843899ED237D785600248147 /* UIColorExtension.swift in Sources */,
 				84B050212376E6F40001F1D0 /* AppDelegate.swift in Sources */,
 				84A73B0C2378526700B5CE3F /* HairColorPredictor.swift in Sources */,
 				84A73B05237841E600B5CE3F /* PhotoLibraryPicker.swift in Sources */,
@@ -402,7 +410,7 @@
 		};
 		84B050322376E6F50001F1D0 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 3E67931CF81E72AD24AC8BC8 /* Pods-AwesomeHairColor.debug.xcconfig */;
+			baseConfigurationReference = 79A7C40A66173A20B5CE42F0 /* Pods-AwesomeHairColor.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -421,7 +429,7 @@
 		};
 		84B050332376E6F50001F1D0 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 5E7131178A47304BD6182490 /* Pods-AwesomeHairColor.release.xcconfig */;
+			baseConfigurationReference = 6C5FA18D3B231A1C3EB84E63 /* Pods-AwesomeHairColor.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;

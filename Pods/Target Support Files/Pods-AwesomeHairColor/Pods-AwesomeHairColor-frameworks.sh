@@ -161,22 +161,24 @@ strip_invalid_archs() {
 
 
 if [[ "$CONFIGURATION" == "Debug" ]]; then
-  install_framework "${BUILT_PRODUCTS_DIR}/ColorSlider/ColorSlider.framework"
   install_framework "${PODS_ROOT}/FritzBase/Frameworks/FritzCore.framework"
   install_framework "${PODS_ROOT}/FritzBase/Frameworks/Fritz.framework"
   install_framework "${PODS_ROOT}/FritzBase/Frameworks/CoreMLHelpers.framework"
   install_framework "${PODS_ROOT}/FritzBase/Frameworks/FritzManagedModel.framework"
   install_framework "${PODS_ROOT}/FritzBase/Frameworks/FritzVision.framework"
   install_framework "${PODS_ROOT}/FritzVisionHairSegmentationModelFast/Frameworks/FritzVisionHairSegmentationModelFast.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/IGColorPicker/IGColorPicker.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/M13Checkbox/M13Checkbox.framework"
 fi
 if [[ "$CONFIGURATION" == "Release" ]]; then
-  install_framework "${BUILT_PRODUCTS_DIR}/ColorSlider/ColorSlider.framework"
   install_framework "${PODS_ROOT}/FritzBase/Frameworks/FritzCore.framework"
   install_framework "${PODS_ROOT}/FritzBase/Frameworks/Fritz.framework"
   install_framework "${PODS_ROOT}/FritzBase/Frameworks/CoreMLHelpers.framework"
   install_framework "${PODS_ROOT}/FritzBase/Frameworks/FritzManagedModel.framework"
   install_framework "${PODS_ROOT}/FritzBase/Frameworks/FritzVision.framework"
   install_framework "${PODS_ROOT}/FritzVisionHairSegmentationModelFast/Frameworks/FritzVisionHairSegmentationModelFast.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/IGColorPicker/IGColorPicker.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/M13Checkbox/M13Checkbox.framework"
 fi
 if [ "${COCOAPODS_PARALLEL_CODE_SIGN}" == "true" ]; then
   wait
