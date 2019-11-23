@@ -10,6 +10,7 @@
 		843899EB237D780E00248147 /* ColorPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 843899EA237D780E00248147 /* ColorPicker.swift */; };
 		843899ED237D785600248147 /* UIColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 843899EC237D785600248147 /* UIColorExtension.swift */; };
 		8441BB852378A66500951947 /* URLExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8441BB842378A66500951947 /* URLExtension.swift */; };
+		845C1B76238486BD001764BE /* LiveViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 845C1B75238486BD001764BE /* LiveViewController.swift */; };
 		84A73B0323783CA900B5CE3F /* VideoHairViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84A73B0223783CA900B5CE3F /* VideoHairViewController.swift */; };
 		84A73B05237841E600B5CE3F /* PhotoLibraryPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84A73B04237841E600B5CE3F /* PhotoLibraryPicker.swift */; };
 		84A73B0C2378526700B5CE3F /* HairColorPredictor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84A73B0B2378526700B5CE3F /* HairColorPredictor.swift */; };
@@ -20,6 +21,8 @@
 		84B0504E2376EED60001F1D0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84B050402376EED60001F1D0 /* LaunchScreen.storyboard */; };
 		84B0504F2376EED60001F1D0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84B050422376EED60001F1D0 /* Main.storyboard */; };
 		84B050532376EED60001F1D0 /* HairColorTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84B050472376EED60001F1D0 /* HairColorTableViewCell.swift */; };
+		84EEFE452387312D000573A5 /* TimerProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84EEFE442387312D000573A5 /* TimerProvider.swift */; };
+		84EEFE4723874047000573A5 /* UIImageExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84EEFE4623874047000573A5 /* UIImageExtension.swift */; };
 		C52E0D7B2488E0560B6A81DE /* Pods_AwesomeHairColor.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 70716A16122DA160EC917EC5 /* Pods_AwesomeHairColor.framework */; };
 /* End PBXBuildFile section */
 
@@ -30,6 +33,7 @@
 		843899EA237D780E00248147 /* ColorPicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorPicker.swift; sourceTree = "<group>"; };
 		843899EC237D785600248147 /* UIColorExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColorExtension.swift; sourceTree = "<group>"; };
 		8441BB842378A66500951947 /* URLExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLExtension.swift; sourceTree = "<group>"; };
+		845C1B75238486BD001764BE /* LiveViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LiveViewController.swift; sourceTree = "<group>"; };
 		84A73B0223783CA900B5CE3F /* VideoHairViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoHairViewController.swift; sourceTree = "<group>"; };
 		84A73B04237841E600B5CE3F /* PhotoLibraryPicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoLibraryPicker.swift; sourceTree = "<group>"; };
 		84A73B0B2378526700B5CE3F /* HairColorPredictor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HairColorPredictor.swift; sourceTree = "<group>"; };
@@ -42,6 +46,8 @@
 		84B050412376EED60001F1D0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		84B050422376EED60001F1D0 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		84B050472376EED60001F1D0 /* HairColorTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HairColorTableViewCell.swift; sourceTree = "<group>"; };
+		84EEFE442387312D000573A5 /* TimerProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerProvider.swift; sourceTree = "<group>"; };
+		84EEFE4623874047000573A5 /* UIImageExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIImageExtension.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,6 +84,7 @@
 			children = (
 				8441BB842378A66500951947 /* URLExtension.swift */,
 				843899EC237D785600248147 /* UIColorExtension.swift */,
+				84EEFE4623874047000573A5 /* UIImageExtension.swift */,
 			);
 			path = Extenstions;
 			sourceTree = "<group>";
@@ -106,6 +113,7 @@
 				84B050372376EED60001F1D0 /* Controllers */,
 				84B0503D2376EED60001F1D0 /* Storyboards */,
 				84B050442376EED60001F1D0 /* UI */,
+				84EEFE4323873117000573A5 /* Services */,
 				84B050342376E7480001F1D0 /* Resources */,
 				84B050202376E6F40001F1D0 /* AppDelegate.swift */,
 				8441BB832378A63D00951947 /* Extenstions */,
@@ -128,6 +136,7 @@
 			children = (
 				84B050382376EED60001F1D0 /* ViewController.swift */,
 				84A73B0223783CA900B5CE3F /* VideoHairViewController.swift */,
+				845C1B75238486BD001764BE /* LiveViewController.swift */,
 				84A73B0B2378526700B5CE3F /* HairColorPredictor.swift */,
 			);
 			path = Controllers;
@@ -150,6 +159,14 @@
 				843899EA237D780E00248147 /* ColorPicker.swift */,
 			);
 			path = UI;
+			sourceTree = "<group>";
+		};
+		84EEFE4323873117000573A5 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				84EEFE442387312D000573A5 /* TimerProvider.swift */,
+			);
+			path = Services;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -272,11 +289,14 @@
 				843899EB237D780E00248147 /* ColorPicker.swift in Sources */,
 				8441BB852378A66500951947 /* URLExtension.swift in Sources */,
 				84B050482376EED60001F1D0 /* ViewController.swift in Sources */,
+				845C1B76238486BD001764BE /* LiveViewController.swift in Sources */,
 				84A73B0323783CA900B5CE3F /* VideoHairViewController.swift in Sources */,
 				843899ED237D785600248147 /* UIColorExtension.swift in Sources */,
 				84B050212376E6F40001F1D0 /* AppDelegate.swift in Sources */,
 				84A73B0C2378526700B5CE3F /* HairColorPredictor.swift in Sources */,
 				84A73B05237841E600B5CE3F /* PhotoLibraryPicker.swift in Sources */,
+				84EEFE452387312D000573A5 /* TimerProvider.swift in Sources */,
+				84EEFE4723874047000573A5 /* UIImageExtension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

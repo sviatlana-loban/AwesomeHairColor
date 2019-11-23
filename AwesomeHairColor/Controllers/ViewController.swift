@@ -14,9 +14,13 @@ class ViewController: UITableViewController {
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         if let cell = tableView.cellForRow(at: indexPath) as? HairColorTableViewCell {
             guard let identifier = cell.reuseIdentifier else { return }
-
-            var viewController = VideoHairViewController()
-            self.navigationController?.pushViewController(viewController, animated: true)
+            if indexPath.row == 0 {
+                var viewController = VideoHairViewController()
+                self.navigationController?.pushViewController(viewController, animated: true)
+            } else {
+                var viewController = LiveViewController()
+                self.navigationController?.pushViewController(viewController, animated: true)
+            }
         }
     }
 }

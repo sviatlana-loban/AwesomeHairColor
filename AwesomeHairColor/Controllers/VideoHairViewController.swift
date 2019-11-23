@@ -13,9 +13,8 @@ import Fritz
 import Photos
 
 class VideoHairViewController: UIViewController, HairColorPredictor {
-
     var color: HairColor!
-
+    
     var photoLibraryPicker: PhotoLibraryPicker?
     var colorPicker: ColorPicker?
 
@@ -31,7 +30,9 @@ class VideoHairViewController: UIViewController, HairColorPredictor {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        self.navigationItem.rightBarButtonItem = UIBarButtonItem(barButtonSystemItem: UIBarButtonItem.SystemItem.save, target: self, action: #selector(savePhoto))
+        self.title = "LET'S COLOR!"
+        
+        self.navigationItem.rightBarButtonItem = UIBarButtonItem(barButtonSystemItem: UIBarButtonItem.SystemItem.save, target: self, action: #selector(savePredictedAsset))
         self.navigationItem.rightBarButtonItem?.isEnabled = false
 
         color = HairColor(hairColor: UIColor.clear)
@@ -47,74 +48,7 @@ class VideoHairViewController: UIViewController, HairColorPredictor {
         super.viewDidAppear(animated)
     }
 
-    @objc func savePhoto() {
-        self.navigationItem.rightBarButtonItem?.isEnabled = false
-        if let predictedImage = predictedImage {
-            UIImageWriteToSavedPhotosAlbum(predictedImage, self, #selector(image(_:didFinishSavingWithError:contextInfo:)), nil)
-        } else if let predictedVIdeo = predictedVideo {
-            guard let documentDirectory = FileManager.default.urls(for: .documentDirectory,
-                                                                   in: .userDomainMask).first else {
-                                                                    return
-            }
-            let dateFormatter = DateFormatter()
-            dateFormatter.dateFormat = "YYYY-MM-dd-HH-mm-ss"
-            let date = dateFormatter.string(from: Date())
-            print(date)
-            let url = documentDirectory.appendingPathComponent("mergeVideo-\(date).mov")
-
-            guard let exporter = AVAssetExportSession(asset: AVAsset(url: sourceUrl.absoluteURL),
-                                                      presetName: AVAssetExportPresetHighestQuality) else {
-                                                        return
-            }
-            exporter.outputURL = url
-            exporter.videoComposition = predictedVIdeo
-            exporter.outputFileType = AVFileType.mov
-            exporter.shouldOptimizeForNetworkUse = true
-
-            exporter.exportAsynchronously() { () -> Void in
-                DispatchQueue.main.async {
-                    self.exportDidFinish(exporter)
-                }
-            }
-        }
-    }
-
-    @objc func image(_ image: UIImage, didFinishSavingWithError error: Error?, contextInfo: UnsafeRawPointer) {
-        if let error = error {
-            self.navigationItem.rightBarButtonItem?.isEnabled = true
-            let ac = UIAlertController(title: "Error", message: "Failed to save image", preferredStyle: .alert)
-            ac.addAction(UIAlertAction(title: "OK", style: .default))
-            present(ac, animated: true)
-        } else {
-            self.navigationItem.rightBarButtonItem?.isEnabled = false
-            let ac = UIAlertController(title: "Saved!", message: "Your image has been saved to your photo library", preferredStyle: .alert)
-            ac.addAction(UIAlertAction(title: "OK", style: .default))
-            present(ac, animated: true)
-        }
-    }
-}
-
-extension VideoHairViewController: PhotoLibraryPickerDelegate {
-
-    func didSelect(url: URL?) {
-        guard let url = url else {
-            return
-        }
-
-        self.sourceUrl = url
-
-        if url.isImage {
-            colorPicker?.addColorPicker(to: self.view)
-            imageView = UIImageView(frame: view.frame)
-            view.addSubview(imageView!)
-            startPhotoPrediction(for: url)
-        } else if url.isMovie {
-            startVideoPrediction(for: url)
-        } else {
-            fatalError("Error file extension")
-        }
-    }
-
+//MARK: HairColoring methods
     internal func startPhotoPrediction(for url: URL) {
         var image: UIImage?
         if let imageData = try? Data(contentsOf: url) {
@@ -127,15 +61,15 @@ extension VideoHairViewController: PhotoLibraryPickerDelegate {
 
         let fritzImage = FritzVisionImage(image: source)
         if self.maskColor == UIColor.clear {
-            showImage(source)
+            showPredictedPhoto(source)
         } else if let maskedImage = self.predict(with: fritzImage) {
-            showImage(maskedImage)
+            showPredictedPhoto(maskedImage)
         } else {
-            showImage(source)
+            showPredictedPhoto(source)
         }
     }
 
-    internal func showImage(_ image: UIImage) {
+    internal func showPredictedPhoto(_ image: UIImage) {
         if let ciImage = image.ciImage {
             let newImage = image.convert(ciImage: ciImage)
             let rotatedImage = UIImage(cgImage: newImage.cgImage!, scale: 1.0, orientation: UIImage.Orientation.right)
@@ -173,6 +107,30 @@ extension VideoHairViewController: PhotoLibraryPickerDelegate {
     }
 }
 
+//MARK: PhotoLibraryPickerDelegate
+extension VideoHairViewController: PhotoLibraryPickerDelegate {
+
+    func didSelect(url: URL?) {
+        guard let url = url else {
+            return
+        }
+
+        self.sourceUrl = url
+
+        if url.isImage {
+            colorPicker?.addColorPicker(to: self.view)
+            imageView = UIImageView(frame: view.frame)
+            view.addSubview(imageView!)
+            startPhotoPrediction(for: url)
+        } else if url.isMovie {
+            startVideoPrediction(for: url)
+        } else {
+            fatalError("Error file extension")
+        }
+    }
+}
+
+//MARK: ColorPickerDelegate
 extension VideoHairViewController: ColorPickerDelegate {
     func didSelectColor(_ color: UIColor) {
         self.maskColor = color
@@ -183,6 +141,7 @@ extension VideoHairViewController: ColorPickerDelegate {
     }
 }
 
+//MARK: Video playing rutines
 extension VideoHairViewController {
 
     func startPlaying() {
@@ -196,6 +155,54 @@ extension VideoHairViewController {
         videoPlayer.pause()
         videoPlayer.seek(to: CMTime.zero)
         videoPlayer.play()
+    }
+}
+
+//MARK: Saving assets
+extension VideoHairViewController {
+    @objc func savePredictedAsset() {
+        self.navigationItem.rightBarButtonItem?.isEnabled = false
+        if let predictedImage = predictedImage {
+            UIImageWriteToSavedPhotosAlbum(predictedImage, self, #selector(image(_:didFinishSavingWithError:contextInfo:)), nil)
+        } else if predictedVideo != nil {
+            exportVideo()
+        }
+    }
+
+    @objc func image(_ image: UIImage, didFinishSavingWithError error: Error?, contextInfo: UnsafeRawPointer) {
+        if error != nil {
+            self.navigationItem.rightBarButtonItem?.isEnabled = true
+            let ac = UIAlertController(title: "Error", message: "Failed to save image", preferredStyle: .alert)
+            ac.addAction(UIAlertAction(title: "OK", style: .default))
+            present(ac, animated: true)
+        } else {
+            self.navigationItem.rightBarButtonItem?.isEnabled = false
+            let ac = UIAlertController(title: "Saved!", message: "Your image has been saved to your photo library", preferredStyle: .alert)
+            ac.addAction(UIAlertAction(title: "OK", style: .default))
+            present(ac, animated: true)
+        }
+    }
+
+    func exportVideo() {
+        guard let documentDirectory = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask).first else { return }
+
+        let dateFormatter = DateFormatter()
+        dateFormatter.dateFormat = "YYYY-MM-dd-HH-mm-ss"
+        let date = dateFormatter.string(from: Date())
+
+        let url = documentDirectory.appendingPathComponent("mergeVideo-\(date).mov")
+
+        guard let exporter = AVAssetExportSession(asset: AVAsset(url: sourceUrl.absoluteURL), presetName: AVAssetExportPresetHighestQuality) else { return }
+        exporter.outputURL = url
+        exporter.videoComposition = predictedVideo
+        exporter.outputFileType = AVFileType.mov
+        exporter.shouldOptimizeForNetworkUse = true
+
+        exporter.exportAsynchronously() { () -> Void in
+            DispatchQueue.main.async {
+                self.exportDidFinish(exporter)
+            }
+        }
     }
 
     func exportDidFinish(_ session: AVAssetExportSession) {
@@ -234,18 +241,5 @@ extension VideoHairViewController {
         } else {
             saveVideoToPhotos()
         }
-    }
-}
-
-
-
-extension UIImage {
-
-    func convert(ciImage:CIImage) -> UIImage
-    {
-        let context:CIContext = CIContext.init(options: nil)
-        let cgImage:CGImage = context.createCGImage(ciImage, from: ciImage.extent)!
-        let image:UIImage = UIImage.init(cgImage: cgImage)
-        return image
     }
 }
