@@ -7,7 +7,7 @@ target 'AwesomeHairColor' do
 
   # Pods for AwesomeHairColor
   pod 'IGColorPicker'
-  pod 'Fritz', '~> 4.2.4'
+  pod 'Fritz', '~>5.0.2'
   pod 'Fritz/VisionSegmentationModel/Hair/Fast'
 
 end
