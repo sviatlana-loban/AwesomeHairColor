@@ -35,6 +35,7 @@ class LiveViewController: UIViewController, HairColorPredictor {
     var currentSampleTime: CMTime?
     var currentVideoDimensions: CMVideoDimensions?
     let context = CIContext()
+    var movieURL: URL?
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -153,7 +154,9 @@ extension LiveViewController: AVCaptureVideoDataOutputSampleBufferDelegate {
             self.isWriting = false
             assetWriterPixelBufferInput = nil
             assetWriter?.finishWriting(completionHandler: {[unowned self] () -> Void in
-                self.saveMovieToCameraRoll()
+                if let movieURL = self.movieURL {
+                    self.saveVideo(at: movieURL)
+                }
             })
 
             timerProvider.stop()
@@ -176,9 +179,11 @@ extension LiveViewController: AVCaptureVideoDataOutputSampleBufferDelegate {
     }
 
     func createWriter() {
-        self.checkForAndDeleteFile()
+        self.movieURL = FileService.getFileUrl()
         do {
-            assetWriter = try AVAssetWriter(outputURL: movieURL() as URL, fileType: AVFileType.mov)
+            if let movieURL = self.movieURL {
+                assetWriter = try AVAssetWriter(outputURL: movieURL, fileType: AVFileType.mov)
+            }
         } catch let error as NSError {
             print(error.localizedDescription)
             return
@@ -207,36 +212,6 @@ extension LiveViewController: AVCaptureVideoDataOutputSampleBufferDelegate {
             assetWriter!.add(assetWriterVideoInput)
         } else {
             print("no way\(assetWriterVideoInput)")
-        }
-    }
-
-    func saveMovieToCameraRoll() {
-        PHPhotoLibrary.shared().performChanges({
-            PHAssetChangeRequest.creationRequestForAssetFromVideo(atFileURL: self.movieURL() as URL)
-        }) { saved, error in
-            if saved {
-                print("saved")
-            }
-        }
-    }
-
-    func movieURL() -> NSURL {
-        let tempDir = NSTemporaryDirectory()
-        let url = NSURL(fileURLWithPath: tempDir).appendingPathComponent("hairColorTmpMov.mov")
-        return url! as NSURL
-    }
-
-    func checkForAndDeleteFile() {
-        let fm = FileManager.default
-        let url = movieURL()
-        let exist = fm.fileExists(atPath: url.path!)
-
-        if exist {
-            do {
-                try fm.removeItem(at: url as URL)
-            } catch let error as NSError {
-                print(error.localizedDescription)
-            }
         }
     }
 }

@@ -118,10 +118,11 @@ extension VideoHairViewController: PhotoLibraryPickerDelegate {
         self.sourceUrl = url
 
         if url.isImage {
-            colorPicker?.addColorPicker(to: self.view)
             imageView = UIImageView(frame: view.frame)
             view.addSubview(imageView!)
+            imageView?.contentMode = .scaleAspectFit
             startPhotoPrediction(for: url)
+            colorPicker?.addColorPicker(to: self.view)
         } else if url.isMovie {
             startVideoPrediction(for: url)
         } else {
@@ -163,83 +164,11 @@ extension VideoHairViewController {
     @objc func savePredictedAsset() {
         self.navigationItem.rightBarButtonItem?.isEnabled = false
         if let predictedImage = predictedImage {
-            UIImageWriteToSavedPhotosAlbum(predictedImage, self, #selector(image(_:didFinishSavingWithError:contextInfo:)), nil)
+            self.savePhoto(predictedImage)
+            //UIImageWriteToSavedPhotosAlbum(predictedImage, self, #selector(image(_:didFinishSavingWithError:contextInfo:)), nil)
         } else if predictedVideo != nil {
-            exportVideo()
-        }
-    }
-
-    @objc func image(_ image: UIImage, didFinishSavingWithError error: Error?, contextInfo: UnsafeRawPointer) {
-        if error != nil {
-            self.navigationItem.rightBarButtonItem?.isEnabled = true
-            let ac = UIAlertController(title: "Error", message: "Failed to save image", preferredStyle: .alert)
-            ac.addAction(UIAlertAction(title: "OK", style: .default))
-            present(ac, animated: true)
-        } else {
-            self.navigationItem.rightBarButtonItem?.isEnabled = false
-            let ac = UIAlertController(title: "Saved!", message: "Your image has been saved to your photo library", preferredStyle: .alert)
-            ac.addAction(UIAlertAction(title: "OK", style: .default))
-            present(ac, animated: true)
-        }
-    }
-
-    func exportVideo() {
-        guard let documentDirectory = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask).first else { return }
-
-        let dateFormatter = DateFormatter()
-        dateFormatter.dateFormat = "YYYY-MM-dd-HH-mm-ss"
-        let date = dateFormatter.string(from: Date())
-
-        let url = documentDirectory.appendingPathComponent("mergeVideo-\(date).mov")
-
-        guard let exporter = AVAssetExportSession(asset: AVAsset(url: sourceUrl.absoluteURL), presetName: AVAssetExportPresetHighestQuality) else { return }
-        exporter.outputURL = url
-        exporter.videoComposition = predictedVideo
-        exporter.outputFileType = AVFileType.mov
-        exporter.shouldOptimizeForNetworkUse = true
-
-        exporter.exportAsynchronously() { () -> Void in
-            DispatchQueue.main.async {
-                self.exportDidFinish(exporter)
-            }
-        }
-    }
-
-    func exportDidFinish(_ session: AVAssetExportSession) {
-
-      guard
-        session.status == AVAssetExportSession.Status.completed,
-        let outputURL = session.outputURL
-        else {
-          return
-      }
-
-        let saveVideoToPhotos = {
-            PHPhotoLibrary.shared().performChanges({
-                PHAssetChangeRequest.creationRequestForAssetFromVideo(atFileURL: outputURL)
-            }) { saved, error in
-                let success = saved && (error == nil)
-                self.navigationItem.rightBarButtonItem?.isEnabled = !success
-                let title = success ? "Saved!" : "Error"
-                let message = success ? "Your video has been saved to your photo library" : "Failed to save video"
-
-                DispatchQueue.main.async {
-                    let alert = UIAlertController(title: title, message: message, preferredStyle: .alert)
-                    alert.addAction(UIAlertAction(title: "OK", style: UIAlertAction.Style.cancel, handler: nil))
-                    self.present(alert, animated: true, completion: nil)
-                }
-            }
-        }
-
-        // Ensure permission to access Photo Library
-        if PHPhotoLibrary.authorizationStatus() != .authorized {
-            PHPhotoLibrary.requestAuthorization { status in
-                if status == .authorized {
-                    saveVideoToPhotos()
-                }
-            }
-        } else {
-            saveVideoToPhotos()
+            self.exportVideo(predictedVideo!, from: sourceUrl.absoluteURL)
+            //exportVideo()
         }
     }
 }
