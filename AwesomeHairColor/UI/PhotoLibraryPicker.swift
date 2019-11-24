@@ -46,9 +46,6 @@ open class PhotoLibraryPicker: NSObject {
 
         let alertController = UIAlertController(title: nil, message: nil, preferredStyle: .actionSheet)
 
-//        if let action = self.action(for: .camera, title: "Take photo") {
-//            alertController.addAction(action)
-//        }
         if let action = self.action(for: .savedPhotosAlbum, title: "Camera roll") {
             alertController.addAction(action)
         }
@@ -56,7 +53,10 @@ open class PhotoLibraryPicker: NSObject {
             alertController.addAction(action)
         }
 
-        alertController.addAction(UIAlertAction(title: "Cancel", style: .cancel, handler: nil))
+        alertController.addAction(UIAlertAction(title: "Cancel", style: .cancel, handler: {
+            [weak self] action in
+            self?.presentationController?.navigationController?.popViewController(animated: true)
+        }))
 
         if UIDevice.current.userInterfaceIdiom == .pad {
             alertController.popoverPresentationController?.sourceView = sourceView

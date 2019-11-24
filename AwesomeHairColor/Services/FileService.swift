@@ -37,16 +37,10 @@ extension UIViewController {
     }
 
     func exportVideo(_ video: AVVideoComposition, from url: URL) {
-        guard let documentDirectory = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask).first else { return }
-
-        let dateFormatter = DateFormatter()
-        dateFormatter.dateFormat = "YYYY-MM-dd-HH-mm-ss"
-        let date = dateFormatter.string(from: Date())
-
-        let url = documentDirectory.appendingPathComponent("mergeVideo-\(date).mov")
+        guard let outputUrl = FileService.getFileUrl() else { return }
 
         guard let exporter = AVAssetExportSession(asset: AVAsset(url: url.absoluteURL), presetName: AVAssetExportPresetHighestQuality) else { return }
-        exporter.outputURL = url
+        exporter.outputURL = outputUrl
         exporter.videoComposition = video
         exporter.outputFileType = AVFileType.mov
         exporter.shouldOptimizeForNetworkUse = true
