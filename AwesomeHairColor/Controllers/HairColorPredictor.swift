@@ -18,6 +18,7 @@ protocol HairColorPredictor: class {
 
 struct HairColor {
   var hairColor: UIColor
+    var colorEffect: CIBlendKernel
 }
 
 extension HairColorPredictor {
@@ -56,7 +57,10 @@ extension HairColorPredictor {
   /// The method used to blend the hair mask with the underlying image.
   /// Soft light produces the best results in our tests, but check out
   /// .hue and .color for different effects.
-  var blendKernel: CIBlendKernel { return .softLight }
+  var blendKernel: CIBlendKernel {
+    get { return color.colorEffect }
+    set { color.colorEffect = newValue }
+  }
 
   /// Color of the mask.
   var maskColor: UIColor {

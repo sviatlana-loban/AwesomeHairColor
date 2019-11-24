@@ -17,6 +17,7 @@ class VideoHairViewController: UIViewController, HairColorPredictor {
     
     var photoLibraryPicker: PhotoLibraryPicker?
     var colorPicker: ColorPicker?
+    var effectPicker: EffectPicker?
 
     var videoPlayer: AVPlayer?
     var imageView: UIImageView?
@@ -35,10 +36,14 @@ class VideoHairViewController: UIViewController, HairColorPredictor {
         self.navigationItem.rightBarButtonItem = UIBarButtonItem(barButtonSystemItem: UIBarButtonItem.SystemItem.save, target: self, action: #selector(savePredictedAsset))
         self.navigationItem.rightBarButtonItem?.isEnabled = false
 
-        color = HairColor(hairColor: UIColor.clear)
+        color = HairColor(hairColor: UIColor.clear, colorEffect: .softLight)
         colorPicker = ColorPickerViewPresenter()
         colorPicker?.pickerPresenterDelegate = self
         self.maskColor = .clear
+
+        effectPicker = EffectPickerViewPresenter()
+        effectPicker?.effectPickerPresenterDelegate = self
+        didSelectEffect(.light)
 
         self.photoLibraryPicker = PhotoLibraryPicker(presentationController: self, delegate: self)
         self.photoLibraryPicker?.present(from: view)
@@ -46,6 +51,15 @@ class VideoHairViewController: UIViewController, HairColorPredictor {
 
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
+    }
+
+    override func viewWillLayoutSubviews() {
+        super.viewWillLayoutSubviews()
+        if let imageView = imageView {
+            view.sendSubviewToBack(imageView)
+        }
+        guard let effectPickerView = effectPicker?.effectPickerView else { return }
+        view.bringSubviewToFront(effectPickerView)
     }
 
 //MARK: HairColoring methods
@@ -122,6 +136,7 @@ extension VideoHairViewController: PhotoLibraryPickerDelegate {
             view.addSubview(imageView!)
             imageView?.contentMode = .scaleAspectFit
             startPhotoPrediction(for: url)
+            effectPicker?.addEffectPicker(to: view)
             colorPicker?.addColorPicker(to: self.view)
         } else if url.isMovie {
             startVideoPrediction(for: url)
@@ -142,6 +157,20 @@ extension VideoHairViewController: ColorPickerDelegate {
     }
 }
 
+//MARK: EffectPickerDelegate
+extension VideoHairViewController: EffectPickerDelegate {
+    func didSelectEffect(_ effect: Effect) {
+        switch effect {
+            case .dark: self.blendKernel = .hue
+            case .light: self.blendKernel = .softLight
+        }
+        if sourceUrl != nil, sourceUrl.isImage {
+            startPhotoPrediction(for: sourceUrl)
+        }
+        self.navigationItem.rightBarButtonItem?.isEnabled = true
+    }
+}
+
 //MARK: Video playing rutines
 extension VideoHairViewController {
 
@@ -149,6 +178,7 @@ extension VideoHairViewController {
         guard let videoPlayer = videoPlayer else { return }
         videoPlayer.play()
         colorPicker?.addColorPicker(to: self.view)
+        effectPicker?.addEffectPicker(to: view)
     }
 
     @objc func endedVideoPlaying(_ notification: Notification) {

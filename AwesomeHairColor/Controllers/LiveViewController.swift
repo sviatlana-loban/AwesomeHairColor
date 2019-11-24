@@ -15,6 +15,7 @@ import Photos
 class LiveViewController: UIViewController, HairColorPredictor {
     var color: HairColor!
     var colorPicker: ColorPicker?
+    var effectPicker: EffectPicker?
 
     var cameraButton: UIView!
     var timerLabel: UILabel!
@@ -39,9 +40,13 @@ class LiveViewController: UIViewController, HairColorPredictor {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        color = HairColor(hairColor: UIColor.clear)
+        color = HairColor(hairColor: UIColor.clear, colorEffect: .softLight)
         colorPicker = ColorPickerViewPresenter()
         colorPicker?.pickerPresenterDelegate = self
+        effectPicker = EffectPickerViewPresenter()
+        effectPicker?.effectPickerPresenterDelegate = self
+        didSelectEffect(.light)
+
 
         cameraView = UIImageView(frame: view.bounds)
         cameraView.contentMode = .scaleAspectFill
@@ -57,7 +62,14 @@ class LiveViewController: UIViewController, HairColorPredictor {
         }
         configureCameraButton()
         self.maskColor = .clear
+        effectPicker?.addEffectPicker(to: view)
         colorPicker?.addColorPicker(to: self.view)
+    }
+
+    override func viewWillLayoutSubviews() {
+        super.viewWillLayoutSubviews()
+        guard let effectPickerView = effectPicker?.effectPickerView else { return }
+        view.bringSubviewToFront(effectPickerView)
     }
 
     func setupCamera() {
@@ -220,5 +232,15 @@ extension LiveViewController: AVCaptureVideoDataOutputSampleBufferDelegate {
 extension LiveViewController: ColorPickerDelegate {
     func didSelectColor(_ color: UIColor) {
         self.maskColor = color
+    }
+}
+
+//MARK: EffectPickerDelegate
+extension LiveViewController: EffectPickerDelegate {
+    func didSelectEffect(_ effect: Effect) {
+        switch effect {
+            case .dark: self.blendKernel = .hue
+            case .light: self.blendKernel = .softLight
+        }
     }
 }
