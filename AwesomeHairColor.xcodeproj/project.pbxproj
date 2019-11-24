@@ -13,9 +13,9 @@
 		844A0464238974C400EA39A3 /* FileService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 844A0463238974C400EA39A3 /* FileService.swift */; };
 		844A0466238AE5C500EA39A3 /* EffectPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 844A0465238AE5C500EA39A3 /* EffectPicker.swift */; };
 		844A0468238B04F000EA39A3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 844A046A238B04F000EA39A3 /* Main.storyboard */; };
-		844A046E238B063500EA39A3 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 844A046D238B063500EA39A3 /* Localizable.strings */; };
 		844A0470238B084B00EA39A3 /* Localize.swift in Sources */ = {isa = PBXBuildFile; fileRef = 844A046F238B084B00EA39A3 /* Localize.swift */; };
 		844A0472238B095300EA39A3 /* UIViewController+SaveAssets.swift in Sources */ = {isa = PBXBuildFile; fileRef = 844A0471238B095300EA39A3 /* UIViewController+SaveAssets.swift */; };
+		844A0475238B10D200EA39A3 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 844A0477238B10D200EA39A3 /* Localizable.strings */; };
 		845C1B76238486BD001764BE /* LiveViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 845C1B75238486BD001764BE /* LiveViewController.swift */; };
 		84A73B0323783CA900B5CE3F /* VideoHairViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84A73B0223783CA900B5CE3F /* VideoHairViewController.swift */; };
 		84A73B05237841E600B5CE3F /* PhotoLibraryPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84A73B04237841E600B5CE3F /* PhotoLibraryPicker.swift */; };
@@ -42,10 +42,10 @@
 		844A0465238AE5C500EA39A3 /* EffectPicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EffectPicker.swift; sourceTree = "<group>"; };
 		844A046B238B04FA00EA39A3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		844A046C238B050A00EA39A3 /* ru-RU */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "ru-RU"; path = "ru-RU.lproj/Main.strings"; sourceTree = "<group>"; };
-		844A046D238B063500EA39A3 /* Localizable.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
 		844A046F238B084B00EA39A3 /* Localize.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Localize.swift; sourceTree = "<group>"; };
 		844A0471238B095300EA39A3 /* UIViewController+SaveAssets.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+SaveAssets.swift"; sourceTree = "<group>"; };
 		844A0474238B0D7000EA39A3 /* ru-RU */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "ru-RU"; path = "ru-RU.lproj/LaunchScreen.strings"; sourceTree = "<group>"; };
+		844A0476238B10D200EA39A3 /* ru-RU */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "ru-RU"; path = "ru-RU.lproj/Localizable.strings"; sourceTree = "<group>"; };
 		845C1B75238486BD001764BE /* LiveViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LiveViewController.swift; sourceTree = "<group>"; };
 		84A73B0223783CA900B5CE3F /* VideoHairViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoHairViewController.swift; sourceTree = "<group>"; };
 		84A73B04237841E600B5CE3F /* PhotoLibraryPicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoLibraryPicker.swift; sourceTree = "<group>"; };
@@ -129,7 +129,7 @@
 				84B050342376E7480001F1D0 /* Resources */,
 				84B050202376E6F40001F1D0 /* AppDelegate.swift */,
 				8441BB832378A63D00951947 /* Extenstions */,
-				844A046D238B063500EA39A3 /* Localizable.strings */,
+				844A0477238B10D200EA39A3 /* Localizable.strings */,
 			);
 			path = AwesomeHairColor;
 			sourceTree = "<group>";
@@ -247,7 +247,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				844A046E238B063500EA39A3 /* Localizable.strings in Resources */,
+				844A0475238B10D200EA39A3 /* Localizable.strings in Resources */,
 				844A0468238B04F000EA39A3 /* Main.storyboard in Resources */,
 				84B0504E2376EED60001F1D0 /* LaunchScreen.storyboard in Resources */,
 				84B0502A2376E6F50001F1D0 /* Assets.xcassets in Resources */,
@@ -333,6 +333,14 @@
 				844A046C238B050A00EA39A3 /* ru-RU */,
 			);
 			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		844A0477238B10D200EA39A3 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				844A0476238B10D200EA39A3 /* ru-RU */,
+			);
+			name = Localizable.strings;
 			sourceTree = "<group>";
 		};
 		84B050402376EED60001F1D0 /* LaunchScreen.storyboard */ = {
