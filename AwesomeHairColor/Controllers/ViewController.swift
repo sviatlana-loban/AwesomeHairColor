@@ -5,7 +5,7 @@ class ViewController: UITableViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        title = "Let's color!".localized().uppercased()
+        title = "AWESOME HAIR COLOR"
         tableView.register(HairColorTableViewCell.self, forCellReuseIdentifier: HairColorTableViewCell.reuseId)
         tableView.tableFooterView = UIView()
         clearsSelectionOnViewWillAppear = true
@@ -15,10 +15,10 @@ class ViewController: UITableViewController {
         if let cell = tableView.cellForRow(at: indexPath) as? HairColorTableViewCell {
             guard let identifier = cell.reuseIdentifier else { return }
             if indexPath.row == 0 {
-                var viewController = VideoHairViewController()
+                let viewController = VideoHairViewController()
                 self.navigationController?.pushViewController(viewController, animated: true)
             } else {
-                var viewController = LiveViewController()
+                let viewController = LiveViewController()
                 self.navigationController?.pushViewController(viewController, animated: true)
             }
         }
