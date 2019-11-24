@@ -5,7 +5,7 @@ class ViewController: UITableViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        title = "Let's color!".uppercased()
+        title = "Let's color!".localized().uppercased()
         tableView.register(HairColorTableViewCell.self, forCellReuseIdentifier: HairColorTableViewCell.reuseId)
         tableView.tableFooterView = UIView()
         clearsSelectionOnViewWillAppear = true

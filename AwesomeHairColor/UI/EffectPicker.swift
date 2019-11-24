@@ -54,8 +54,8 @@ class EffectPickerViewPresenter: EffectPicker {
             //button.set
         }
 
-        darkEffect.setTitle("Dark", for: .normal)
-        softEffect.setTitle("Light", for: .normal)
+        darkEffect.setTitle("Dark".localized(), for: .normal)
+        softEffect.setTitle("Light".localized(), for: .normal)
 
         effectPickerView = UIStackView(arrangedSubviews: effectButtons)
 

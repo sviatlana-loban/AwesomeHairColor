@@ -12,6 +12,10 @@
 		8441BB852378A66500951947 /* URLExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8441BB842378A66500951947 /* URLExtension.swift */; };
 		844A0464238974C400EA39A3 /* FileService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 844A0463238974C400EA39A3 /* FileService.swift */; };
 		844A0466238AE5C500EA39A3 /* EffectPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 844A0465238AE5C500EA39A3 /* EffectPicker.swift */; };
+		844A0468238B04F000EA39A3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 844A046A238B04F000EA39A3 /* Main.storyboard */; };
+		844A046E238B063500EA39A3 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 844A046D238B063500EA39A3 /* Localizable.strings */; };
+		844A0470238B084B00EA39A3 /* Localize.swift in Sources */ = {isa = PBXBuildFile; fileRef = 844A046F238B084B00EA39A3 /* Localize.swift */; };
+		844A0472238B095300EA39A3 /* UIViewController+SaveAssets.swift in Sources */ = {isa = PBXBuildFile; fileRef = 844A0471238B095300EA39A3 /* UIViewController+SaveAssets.swift */; };
 		845C1B76238486BD001764BE /* LiveViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 845C1B75238486BD001764BE /* LiveViewController.swift */; };
 		84A73B0323783CA900B5CE3F /* VideoHairViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84A73B0223783CA900B5CE3F /* VideoHairViewController.swift */; };
 		84A73B05237841E600B5CE3F /* PhotoLibraryPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84A73B04237841E600B5CE3F /* PhotoLibraryPicker.swift */; };
@@ -21,7 +25,6 @@
 		84B050362376E7610001F1D0 /* Fritz-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 84B050352376E7610001F1D0 /* Fritz-Info.plist */; };
 		84B050482376EED60001F1D0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84B050382376EED60001F1D0 /* ViewController.swift */; };
 		84B0504E2376EED60001F1D0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84B050402376EED60001F1D0 /* LaunchScreen.storyboard */; };
-		84B0504F2376EED60001F1D0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84B050422376EED60001F1D0 /* Main.storyboard */; };
 		84B050532376EED60001F1D0 /* HairColorTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84B050472376EED60001F1D0 /* HairColorTableViewCell.swift */; };
 		84EEFE452387312D000573A5 /* TimerProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84EEFE442387312D000573A5 /* TimerProvider.swift */; };
 		84EEFE4723874047000573A5 /* UIImageExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84EEFE4623874047000573A5 /* UIImageExtension.swift */; };
@@ -37,6 +40,12 @@
 		8441BB842378A66500951947 /* URLExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLExtension.swift; sourceTree = "<group>"; };
 		844A0463238974C400EA39A3 /* FileService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileService.swift; sourceTree = "<group>"; };
 		844A0465238AE5C500EA39A3 /* EffectPicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EffectPicker.swift; sourceTree = "<group>"; };
+		844A0467238B04D800EA39A3 /* ru-RU */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "ru-RU"; path = "ru-RU.lproj/LaunchScreen.strings"; sourceTree = "<group>"; };
+		844A046B238B04FA00EA39A3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		844A046C238B050A00EA39A3 /* ru-RU */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "ru-RU"; path = "ru-RU.lproj/Main.strings"; sourceTree = "<group>"; };
+		844A046D238B063500EA39A3 /* Localizable.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
+		844A046F238B084B00EA39A3 /* Localize.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Localize.swift; sourceTree = "<group>"; };
+		844A0471238B095300EA39A3 /* UIViewController+SaveAssets.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+SaveAssets.swift"; sourceTree = "<group>"; };
 		845C1B75238486BD001764BE /* LiveViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LiveViewController.swift; sourceTree = "<group>"; };
 		84A73B0223783CA900B5CE3F /* VideoHairViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoHairViewController.swift; sourceTree = "<group>"; };
 		84A73B04237841E600B5CE3F /* PhotoLibraryPicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoLibraryPicker.swift; sourceTree = "<group>"; };
@@ -48,7 +57,6 @@
 		84B050352376E7610001F1D0 /* Fritz-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "Fritz-Info.plist"; sourceTree = "<group>"; };
 		84B050382376EED60001F1D0 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		84B050412376EED60001F1D0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		84B050422376EED60001F1D0 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		84B050472376EED60001F1D0 /* HairColorTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HairColorTableViewCell.swift; sourceTree = "<group>"; };
 		84EEFE442387312D000573A5 /* TimerProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerProvider.swift; sourceTree = "<group>"; };
 		84EEFE4623874047000573A5 /* UIImageExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIImageExtension.swift; sourceTree = "<group>"; };
@@ -121,6 +129,7 @@
 				84B050342376E7480001F1D0 /* Resources */,
 				84B050202376E6F40001F1D0 /* AppDelegate.swift */,
 				8441BB832378A63D00951947 /* Extenstions */,
+				844A046D238B063500EA39A3 /* Localizable.strings */,
 			);
 			path = AwesomeHairColor;
 			sourceTree = "<group>";
@@ -150,7 +159,7 @@
 			isa = PBXGroup;
 			children = (
 				84B050402376EED60001F1D0 /* LaunchScreen.storyboard */,
-				84B050422376EED60001F1D0 /* Main.storyboard */,
+				844A046A238B04F000EA39A3 /* Main.storyboard */,
 			);
 			path = Storyboards;
 			sourceTree = "<group>";
@@ -162,6 +171,7 @@
 				84A73B04237841E600B5CE3F /* PhotoLibraryPicker.swift */,
 				843899EA237D780E00248147 /* ColorPicker.swift */,
 				844A0465238AE5C500EA39A3 /* EffectPicker.swift */,
+				844A0471238B095300EA39A3 /* UIViewController+SaveAssets.swift */,
 			);
 			path = UI;
 			sourceTree = "<group>";
@@ -171,6 +181,7 @@
 			children = (
 				84EEFE442387312D000573A5 /* TimerProvider.swift */,
 				844A0463238974C400EA39A3 /* FileService.swift */,
+				844A046F238B084B00EA39A3 /* Localize.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -219,6 +230,7 @@
 			knownRegions = (
 				en,
 				Base,
+				"ru-RU",
 			);
 			mainGroup = 84B050142376E6F40001F1D0;
 			productRefGroup = 84B0501E2376E6F40001F1D0 /* Products */;
@@ -235,7 +247,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				84B0504F2376EED60001F1D0 /* Main.storyboard in Resources */,
+				844A046E238B063500EA39A3 /* Localizable.strings in Resources */,
+				844A0468238B04F000EA39A3 /* Main.storyboard in Resources */,
 				84B0504E2376EED60001F1D0 /* LaunchScreen.storyboard in Resources */,
 				84B0502A2376E6F50001F1D0 /* Assets.xcassets in Resources */,
 				84B050362376E7610001F1D0 /* Fritz-Info.plist in Resources */,
@@ -293,6 +306,7 @@
 			files = (
 				84B050532376EED60001F1D0 /* HairColorTableViewCell.swift in Sources */,
 				843899EB237D780E00248147 /* ColorPicker.swift in Sources */,
+				844A0472238B095300EA39A3 /* UIViewController+SaveAssets.swift in Sources */,
 				844A0466238AE5C500EA39A3 /* EffectPicker.swift in Sources */,
 				8441BB852378A66500951947 /* URLExtension.swift in Sources */,
 				84B050482376EED60001F1D0 /* ViewController.swift in Sources */,
@@ -303,6 +317,7 @@
 				84A73B0C2378526700B5CE3F /* HairColorPredictor.swift in Sources */,
 				84A73B05237841E600B5CE3F /* PhotoLibraryPicker.swift in Sources */,
 				84EEFE452387312D000573A5 /* TimerProvider.swift in Sources */,
+				844A0470238B084B00EA39A3 /* Localize.swift in Sources */,
 				844A0464238974C400EA39A3 /* FileService.swift in Sources */,
 				84EEFE4723874047000573A5 /* UIImageExtension.swift in Sources */,
 			);
@@ -311,10 +326,20 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
+		844A046A238B04F000EA39A3 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				844A046B238B04FA00EA39A3 /* Base */,
+				844A046C238B050A00EA39A3 /* ru-RU */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
 		84B050402376EED60001F1D0 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
 				84B050412376EED60001F1D0 /* Base */,
+				844A0467238B04D800EA39A3 /* ru-RU */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -326,6 +351,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -386,6 +412,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";

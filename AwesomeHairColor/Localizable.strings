@@ -1,0 +1,20 @@
+/* 
+  Localizable.strings
+  AwesomeHairColor
+
+  Created by Admin on 11/24/19.
+  Copyright © 2019 SLoban. All rights reserved.
+*/
+
+"Let's color!" = "Новый цвет!";
+"Camera roll" = "Фотопленка";
+"Photo library" = "Библиотека фото";
+"Cancel" = "Отменить";
+"Dark" = "Темнее";
+"Light" = "Светлее";
+"Saved!" = "Сохранено!";
+"Error" = "Ошибка";
+"Your image has been saved to your photo library" = "Фото было успешно сохранено";
+"Your video has been saved to your photo library" = "Видео было успешно сохранено";
+"Failed to save video" = "Не удалось сохранить видео";
+"Failed to save image" = "Не удалось сохранить изображение";

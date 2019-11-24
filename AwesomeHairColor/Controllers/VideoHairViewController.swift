@@ -31,7 +31,7 @@ class VideoHairViewController: UIViewController, HairColorPredictor {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        self.title = "LET'S COLOR!"
+        self.title = "LET'S COLOR!".localized()
         
         self.navigationItem.rightBarButtonItem = UIBarButtonItem(barButtonSystemItem: UIBarButtonItem.SystemItem.save, target: self, action: #selector(savePredictedAsset))
         self.navigationItem.rightBarButtonItem?.isEnabled = false
