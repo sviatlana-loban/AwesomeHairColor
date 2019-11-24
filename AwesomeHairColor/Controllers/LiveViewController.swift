@@ -40,6 +40,8 @@ class LiveViewController: UIViewController, HairColorPredictor {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        title = "Let's color!".localized().uppercased()
+        
         color = HairColor(hairColor: UIColor.clear, colorEffect: .softLight)
         colorPicker = ColorPickerViewPresenter()
         colorPicker?.pickerPresenterDelegate = self

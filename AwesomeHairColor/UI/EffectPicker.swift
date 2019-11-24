@@ -10,8 +10,8 @@ import Foundation
 import UIKit
 
 enum Effect: Int {
-    case dark = 0
-    case light = 1
+    case light = 0
+    case dark = 1
 }
 
 protocol EffectPickerDelegate {
@@ -60,7 +60,7 @@ class EffectPickerViewPresenter: EffectPicker {
         effectPickerView = UIStackView(arrangedSubviews: effectButtons)
 
         effectPickerView?.axis = .vertical
-        effectPickerView?.frame = CGRect(x: width - 70, y: height/2 - 45, width: 60, height: 80)
+        effectPickerView?.frame = CGRect(x: width - 83, y: 100, width: 73, height: 80)
         effectPickerView?.distribution = .fillEqually
         effectPickerView?.spacing = 10.0
 
