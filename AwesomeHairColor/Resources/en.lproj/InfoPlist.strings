@@ -1,0 +1,11 @@
+/* 
+  InfoPlist.strings
+  AwesomeHairColor
+
+  Created by Admin on 11/25/19.
+  Copyright © 2019 SLoban. All rights reserved.
+*/
+
+"NSCameraUsageDescription" = "Will be used for coloring in live mode";
+"NSPhotoLibraryUsageDescription" = "Will be used to select photos for coloring";
+"NSPhotoLibraryAddUsageDescription" = "Will be used to save colored photos";
