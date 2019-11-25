@@ -26,6 +26,7 @@
 		84B050482376EED60001F1D0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84B050382376EED60001F1D0 /* ViewController.swift */; };
 		84B0504E2376EED60001F1D0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84B050402376EED60001F1D0 /* LaunchScreen.storyboard */; };
 		84B050532376EED60001F1D0 /* HairColorTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84B050472376EED60001F1D0 /* HairColorTableViewCell.swift */; };
+		84CA457C238C1D2300CCC824 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 84CA457E238C1D2300CCC824 /* InfoPlist.strings */; };
 		84EEFE452387312D000573A5 /* TimerProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84EEFE442387312D000573A5 /* TimerProvider.swift */; };
 		84EEFE4723874047000573A5 /* UIImageExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84EEFE4623874047000573A5 /* UIImageExtension.swift */; };
 		C52E0D7B2488E0560B6A81DE /* Pods_AwesomeHairColor.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 70716A16122DA160EC917EC5 /* Pods_AwesomeHairColor.framework */; };
@@ -58,6 +59,8 @@
 		84B050382376EED60001F1D0 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		84B050412376EED60001F1D0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		84B050472376EED60001F1D0 /* HairColorTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HairColorTableViewCell.swift; sourceTree = "<group>"; };
+		84CA457D238C1D2300CCC824 /* ru-RU */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "ru-RU"; path = "ru-RU.lproj/InfoPlist.strings"; sourceTree = "<group>"; };
+		84CA457F238C1D2800CCC824 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		84EEFE442387312D000573A5 /* TimerProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerProvider.swift; sourceTree = "<group>"; };
 		84EEFE4623874047000573A5 /* UIImageExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIImageExtension.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -140,6 +143,7 @@
 				84B050352376E7610001F1D0 /* Fritz-Info.plist */,
 				84B050292376E6F50001F1D0 /* Assets.xcassets */,
 				84B0502E2376E6F50001F1D0 /* Info.plist */,
+				84CA457E238C1D2300CCC824 /* InfoPlist.strings */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -248,6 +252,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				844A0475238B10D200EA39A3 /* Localizable.strings in Resources */,
+				84CA457C238C1D2300CCC824 /* InfoPlist.strings in Resources */,
 				844A0468238B04F000EA39A3 /* Main.storyboard in Resources */,
 				84B0504E2376EED60001F1D0 /* LaunchScreen.storyboard in Resources */,
 				84B0502A2376E6F50001F1D0 /* Assets.xcassets in Resources */,
@@ -350,6 +355,15 @@
 				844A0474238B0D7000EA39A3 /* ru-RU */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		84CA457E238C1D2300CCC824 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				84CA457D238C1D2300CCC824 /* ru-RU */,
+				84CA457F238C1D2800CCC824 /* en */,
+			);
+			name = InfoPlist.strings;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */

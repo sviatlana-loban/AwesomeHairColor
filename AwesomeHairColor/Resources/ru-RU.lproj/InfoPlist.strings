@@ -1,0 +1,11 @@
+/* 
+  InfoPlist.strings
+  AwesomeHairColor
+
+  Created by Admin on 11/25/19.
+  Copyright © 2019 SLoban. All rights reserved.
+*/
+
+"NSCameraUsageDescription" = "Доступ нужен для работы в live режиме";
+"NSPhotoLibraryUsageDescription" = "Доступ нужен, чтобы выбирать сохраненные селфи";
+"NSPhotoLibraryAddUsageDescription" = "Доступ нужен, чтобы сохранять новые образы";
