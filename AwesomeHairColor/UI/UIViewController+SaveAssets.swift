@@ -22,14 +22,18 @@ extension UIViewController {
         let saveToPhotoLibrary = { [unowned self] in
             if error != nil {
                 self.navigationItem.rightBarButtonItem?.isEnabled = true
-                let ac = UIAlertController(title: "Error".localized(), message: "Failed to save image".localized(), preferredStyle: .alert)
-                ac.addAction(UIAlertAction(title: "OK", style: .default))
-                self.present(ac, animated: true)
+                DispatchQueue.main.async {
+                    let ac = UIAlertController(title: "Error".localized(), message: "Failed to save image".localized(), preferredStyle: .alert)
+                    ac.addAction(UIAlertAction(title: "OK", style: .default))
+                    self.present(ac, animated: true)
+                }
+
             } else {
                 self.navigationItem.rightBarButtonItem?.isEnabled = false
-                let ac = UIAlertController(title: "Saved!".localized(), message: "Your image has been saved to your photo library".localized(), preferredStyle: .alert)
-                ac.addAction(UIAlertAction(title: "OK", style: .default))
-                self.present(ac, animated: true)
+                DispatchQueue.main.async {
+                    let ac = UIAlertController(title: "Saved!".localized(), message: "Your image has been saved to your photo library".localized(), preferredStyle: .alert)
+                    ac.addAction(UIAlertAction(title: "OK", style: .default))
+                    self.present(ac, animated: true)                }
             }
         }
 
@@ -88,14 +92,17 @@ extension UIViewController {
     func checkAuthorizationAndPerform(_ saveAction: (()-> Void)?) {
         // Ensure permission to access Photo Library
         guard let saveAction = saveAction else { return }
-        if PHPhotoLibrary.authorizationStatus() != .authorized {
-            PHPhotoLibrary.requestAuthorization { status in
-                if status == .authorized {
-                    saveAction()
+        DispatchQueue.main.async {
+            if PHPhotoLibrary.authorizationStatus() != .authorized {
+                PHPhotoLibrary.requestAuthorization { status in
+                    if status == .authorized {
+                        saveAction()
+                    }
                 }
+            } else {
+                saveAction()
             }
-        } else {
-            saveAction()
         }
+
     }
 }
