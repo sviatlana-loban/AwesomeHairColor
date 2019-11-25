@@ -1,0 +1,15 @@
+
+/* Class = "UILabel"; text = "Run on a saved selfie"; ObjectID = "9JU-mk-wuE"; */
+"9JU-mk-wuE.text" = "Попробовать на сохраненном селфи";
+
+/* Class = "UILabel"; text = "Try hair coloring in live mode and record a video."; ObjectID = "9p9-tM-SsV"; */
+"9p9-tM-SsV.text" = "Попробуй новый цвет на live видео.";
+
+/* Class = "UILabel"; text = "Run on life mode"; ObjectID = "dkD-5b-8XA"; */
+"dkD-5b-8XA.text" = "Запустить в live режиме";
+
+/* Class = "UIBarButtonItem"; title = "Back"; ObjectID = "qnD-Ik-Ecq"; */
+"qnD-Ik-Ecq.title" = "Назад";
+
+/* Class = "UILabel"; text = "Choose an existing selfie photo or video and try hair coloring."; ObjectID = "sN4-oT-Ygr"; */
+"sN4-oT-Ygr.text" = "Выбери сохранненное видео или фото и попробуй новый цвет.";

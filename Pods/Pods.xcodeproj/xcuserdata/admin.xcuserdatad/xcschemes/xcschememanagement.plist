@@ -4,40 +4,47 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
-		<key>ColorSlider.xcscheme</key>
+		<key>Fritz.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
 			<key>orderHint</key>
 			<integer>0</integer>
 		</dict>
-		<key>Fritz.xcscheme</key>
+		<key>FritzBase.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
 			<key>orderHint</key>
 			<integer>1</integer>
 		</dict>
-		<key>FritzBase.xcscheme</key>
+		<key>FritzVisionHairSegmentationModelFast.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
 			<key>orderHint</key>
 			<integer>2</integer>
 		</dict>
-		<key>FritzVisionHairSegmentationModelFast.xcscheme</key>
+		<key>IGColorPicker.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
 			<key>orderHint</key>
 			<integer>3</integer>
 		</dict>
-		<key>Pods-AwesomeHairColor.xcscheme</key>
+		<key>M13Checkbox.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
 			<key>orderHint</key>
 			<integer>4</integer>
+		</dict>
+		<key>Pods-AwesomeHairColor.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+			<key>orderHint</key>
+			<integer>5</integer>
 		</dict>
 	</dict>
 	<key>SuppressBuildableAutocreation</key>

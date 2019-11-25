@@ -6,8 +6,8 @@ target 'AwesomeHairColor' do
   use_frameworks!
 
   # Pods for AwesomeHairColor
-  pod 'ColorSlider', '~> 4.4'
-  pod 'Fritz', '~> 4.2.4'
+  pod 'IGColorPicker'
+  pod 'Fritz', '~>5.0.2'
   pod 'Fritz/VisionSegmentationModel/Hair/Fast'
 
 end

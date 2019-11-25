@@ -24,6 +24,10 @@
 	<string>LaunchScreen</string>
 	<key>NSCameraUsageDescription</key>
 	<string>AI!</string>
+	<key>NSPhotoLibraryUsageDescription</key>
+	<string>Selec photos for coloring</string>
+	<key>NSPhotoLibraryAddUsageDescription</key>
+	<string>Save colored photos</string>
 	<key>UIMainStoryboardFile</key>
 	<string>Main</string>
 	<key>UIRequiredDeviceCapabilities</key>
