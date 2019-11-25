@@ -1,0 +1,1296 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXAggregateTarget section */
+		BA38F7C718B6EB0F27C136D47979AFC0 /* FritzVisionHairSegmentationModelFast */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 580EA9CDD4B325CC522258628A137311 /* Build configuration list for PBXAggregateTarget "FritzVisionHairSegmentationModelFast" */;
+			buildPhases = (
+			);
+			dependencies = (
+				A42CB66B5815A3D9B734785E655B6A4F /* PBXTargetDependency */,
+			);
+			name = FritzVisionHairSegmentationModelFast;
+		};
+		D3AE921386E3F53A09FA4AE6610DCA6A /* FritzBase */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 14CF215E8E60C1694F46235809C19DDD /* Build configuration list for PBXAggregateTarget "FritzBase" */;
+			buildPhases = (
+			);
+			dependencies = (
+			);
+			name = FritzBase;
+		};
+		FD4D230B022BCBFF67A5E99BA7AA380B /* Fritz */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 53CEC9D2DB32901F8C7F3C9497874F5C /* Build configuration list for PBXAggregateTarget "Fritz" */;
+			buildPhases = (
+			);
+			dependencies = (
+				D290D38928D3486A7022DE9D788FFACA /* PBXTargetDependency */,
+				739A85B58BA020DD8603E87ECFE5A788 /* PBXTargetDependency */,
+			);
+			name = Fritz;
+		};
+/* End PBXAggregateTarget section */
+
+/* Begin PBXBuildFile section */
+		0126B11AAF31F96644C6F82064721027 /* M13Checkbox.swift in Sources */ = {isa = PBXBuildFile; fileRef = B73D0EEB8C7D0B374B6D34700B01CD17 /* M13Checkbox.swift */; };
+		0890C4FCCD8694901A86377642907929 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B556076667A848081B6C4191C7384F7C /* Foundation.framework */; };
+		128FA21D7EFAB80FC1F2B851D4D6450A /* M13CheckboxDotController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A95A8B4D8E73E9B642E6F9EF6F2EE483 /* M13CheckboxDotController.swift */; };
+		12EDD45814D8150755D0B6B9024CEFCD /* M13CheckboxAnimationGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0ADC9DBF687B938EFF46AE1DD80B9FB /* M13CheckboxAnimationGenerator.swift */; };
+		16860195B5F7EA0E583C7B52FEE745FE /* M13CheckboxFillController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC0514FB32E1045428765C043F8177F7 /* M13CheckboxFillController.swift */; };
+		1BB92ED1C2A38E73E82956BE00F0C4B7 /* M13CheckboxBounceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3419714F0CF1DF3E8114B47D7F4050A2 /* M13CheckboxBounceController.swift */; };
+		224E7A8EC9F1222531E3A0C3977FCDAB /* ColorPickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 191C3D7EE59A83397A4A8CFC20DC5E78 /* ColorPickerView.swift */; };
+		2265A020B0727EB38FA75523D170B51A /* M13CheckboxExpandController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C35F60536B3D339931E7413D00E25C64 /* M13CheckboxExpandController.swift */; };
+		23A263255B6EFDD46330E29E1F40B7E1 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B1B15E16A0F33A0958F88DE922DCE5FD /* CoreGraphics.framework */; };
+		264D38C04FB2A8AAC6DD94AEEDE6D33E /* ColorPickerCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57BB6F7C3EC30F164369AF70B96F4718 /* ColorPickerCell.swift */; };
+		3DA07DFC44F8781C43CEF13FA981122F /* M13Checkbox-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 88A7DEA3BB9C4ECE46BC7EF8D3531F4F /* M13Checkbox-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4147AAEFC99B3FF5EE4792FEC4A009F5 /* IGColorPicker-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 16E77F9B603A822EBBBFF641887A3816 /* IGColorPicker-dummy.m */; };
+		4A107B86C255F6A49C6616D546B40585 /* M13Checkbox+IB.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C5C489ABBE74FAB1A313759F607DE75 /* M13Checkbox+IB.swift */; };
+		551ED8009D7A001E38FD3C99D25F5CBD /* UIColor+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAAE7C8DB1A08ADFE8FAF2A84C05C84E /* UIColor+Extension.swift */; };
+		668EAECD33445BDF94D40582FAC8310E /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7DBFAF4C313D8729E56CBDF62618A7CC /* UIKit.framework */; };
+		6A7A384A3F24F41E61C5EC59DC89FB2B /* M13CheckboxPathGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DA85BB9C460B8EA6B0D87ED0D89F342 /* M13CheckboxPathGenerator.swift */; };
+		6E3B6CDC0E81F85823E58AB72A58C6EC /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B556076667A848081B6C4191C7384F7C /* Foundation.framework */; };
+		7D7320E54ED74F035C71178A4508FAA5 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B556076667A848081B6C4191C7384F7C /* Foundation.framework */; };
+		7F5190775C2ED8906A109184913D9066 /* M13Checkbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B05C6C07A481A55753BDE38203445188 /* M13Checkbox.framework */; };
+		7F5C1F4F2BE2212FCEE08299124361F4 /* M13Checkbox-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 5DD86A661EF88A092A4074EDC7CBEDFC /* M13Checkbox-dummy.m */; };
+		845FFB8F470D34D9D2B1EBF240E153A2 /* ColorPickerViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ABDE0FF2DC42CA7919E7BDB49C2F559 /* ColorPickerViewDelegate.swift */; };
+		88FA28B34E671180474152FCC00CDE3C /* M13CheckboxSpiralController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D2A357D36E6B588F3779ECB8070F2A5 /* M13CheckboxSpiralController.swift */; };
+		9BB0A051DB100FFA00C3BF14F614CEA7 /* Pods-AwesomeHairColor-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 9540DAE4217E0D5DA4D1337B5398E30F /* Pods-AwesomeHairColor-dummy.m */; };
+		9EE1FDEFDD39B68FC45914834243E3F6 /* IGColorPicker-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 3749CD9445CDBA1CA86CE4255B172A85 /* IGColorPicker-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9F6A924646BC2E5C790B822DFA3D6DF3 /* M13CheckboxFlatController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 293ACC8F7F696433DB22F3F589E5DF87 /* M13CheckboxFlatController.swift */; };
+		A2E15A3C59A1B26BC369820D7914C739 /* M13CheckboxAddRemovePathGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF7B9281F68397546C6A1849191868C7 /* M13CheckboxAddRemovePathGenerator.swift */; };
+		A4E3AA395F2CC53A35AFC0FA78ABE33F /* M13CheckboxGestureRecognizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95DF68C5B978E4B4A87335E422FF4D37 /* M13CheckboxGestureRecognizer.swift */; };
+		A7F238E4EA685E9A685F4A6AE1568549 /* DefaultValues.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8609519BC20085DC6C369DB338A7CF5A /* DefaultValues.swift */; };
+		B318B688B65B56BC840B03962D2DE393 /* ColorPickerViewDelegateFlowLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EE0B3678A66445C8D65FD220E07DE08 /* ColorPickerViewDelegateFlowLayout.swift */; };
+		BC8F9F3A3C4B4E685AD494B3A3DC4BD7 /* M13CheckboxFadeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2688814A64F9AA58C7F95295CDB65204 /* M13CheckboxFadeController.swift */; };
+		CEA58AA496E50293351846F485ED1E56 /* Pods-AwesomeHairColor-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 81C00FCA43F2768240BE303AB57BBB50 /* Pods-AwesomeHairColor-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D7B3528A3103B65FA92AAA30AEF7B8D1 /* M13CheckboxRadioPathGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 812B16BAF1946F2490B3F9228F5A7E34 /* M13CheckboxRadioPathGenerator.swift */; };
+		E6FFE305826BE9881BB19196880D5A74 /* M13CheckboxController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB40402A5F71565D278F172D9C5D2BF8 /* M13CheckboxController.swift */; };
+		EE5DDEFF888762F44404E30889EFCF70 /* M13CheckboxCheckPathGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC8C17C0EB8AD0A4D6EE0F1B7A19B596 /* M13CheckboxCheckPathGenerator.swift */; };
+		F00EA7040B010ACDE2EA7011D7529A11 /* M13CheckboxDisclosurePathGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA26BD9949B223B3C6DFDCB4D82D1D1E /* M13CheckboxDisclosurePathGenerator.swift */; };
+		F78870AB77C739F4971E831CD98D3696 /* M13CheckboxStrokeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75C1D2F09C840A776F70183808713514 /* M13CheckboxStrokeController.swift */; };
+		F8B8496663DA7512C8DCDA1DCA05C60E /* DefaultValues.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF3725329D513AE9F8D503CB54CAE3B6 /* DefaultValues.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		364384228B0FD6B44343EDC96A36C772 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D3AE921386E3F53A09FA4AE6610DCA6A;
+			remoteInfo = FritzBase;
+		};
+		43272D37516B5466555571A4A7E5B2DE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BA38F7C718B6EB0F27C136D47979AFC0;
+			remoteInfo = FritzVisionHairSegmentationModelFast;
+		};
+		A0682E59E21CBA0255151F636AD1D70F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D3AE921386E3F53A09FA4AE6610DCA6A;
+			remoteInfo = FritzBase;
+		};
+		A35AE0B47C9832708377DA76DD6B17C5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FD4D230B022BCBFF67A5E99BA7AA380B;
+			remoteInfo = Fritz;
+		};
+		CCEDBC86FB8664F6250D91C83EC7BEAD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D3AE921386E3F53A09FA4AE6610DCA6A;
+			remoteInfo = FritzBase;
+		};
+		D134A87C8335D412CF7FF02A461DE7FD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7111E54EAE43E89F451A75076C3525ED;
+			remoteInfo = M13Checkbox;
+		};
+		D65F14D2BF5E169A2ADA91A8D799826A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BA38F7C718B6EB0F27C136D47979AFC0;
+			remoteInfo = FritzVisionHairSegmentationModelFast;
+		};
+		DDB3003722DA5442EBEA6C3909A0449E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7111E54EAE43E89F451A75076C3525ED;
+			remoteInfo = M13Checkbox;
+		};
+		E7A0E260788FEB760756510181524F85 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6D8D2751C5F0C2E845398BA4D7969D44;
+			remoteInfo = IGColorPicker;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0A7A8CF2B48E992C7754FB8E57965D4E /* IGColorPicker.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = IGColorPicker.xcconfig; sourceTree = "<group>"; };
+		0ABDE0FF2DC42CA7919E7BDB49C2F559 /* ColorPickerViewDelegate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ColorPickerViewDelegate.swift; path = IGColorPicker/Classes/Protocol/ColorPickerViewDelegate.swift; sourceTree = "<group>"; };
+		0CDB57C67FD2AE5A3684C7CD75559EA7 /* Fritz.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Fritz.xcconfig; sourceTree = "<group>"; };
+		0D2A357D36E6B588F3779ECB8070F2A5 /* M13CheckboxSpiralController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = M13CheckboxSpiralController.swift; path = Sources/Managers/M13CheckboxSpiralController.swift; sourceTree = "<group>"; };
+		0DA85BB9C460B8EA6B0D87ED0D89F342 /* M13CheckboxPathGenerator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = M13CheckboxPathGenerator.swift; path = Sources/Paths/M13CheckboxPathGenerator.swift; sourceTree = "<group>"; };
+		12C6A57726296A22A0BD59D98A2E5A83 /* Pods-AwesomeHairColor.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-AwesomeHairColor.modulemap"; sourceTree = "<group>"; };
+		1628542AC5025CAD36F0A72A66193B8B /* IGColorPicker-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "IGColorPicker-Info.plist"; sourceTree = "<group>"; };
+		16E77F9B603A822EBBBFF641887A3816 /* IGColorPicker-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "IGColorPicker-dummy.m"; sourceTree = "<group>"; };
+		191C3D7EE59A83397A4A8CFC20DC5E78 /* ColorPickerView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ColorPickerView.swift; path = IGColorPicker/Classes/View/ColorPickerView.swift; sourceTree = "<group>"; };
+		1C25C4C1600D292C7E2B0BC43002C4E9 /* M13Checkbox-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "M13Checkbox-Info.plist"; sourceTree = "<group>"; };
+		2688814A64F9AA58C7F95295CDB65204 /* M13CheckboxFadeController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = M13CheckboxFadeController.swift; path = Sources/Managers/M13CheckboxFadeController.swift; sourceTree = "<group>"; };
+		293ACC8F7F696433DB22F3F589E5DF87 /* M13CheckboxFlatController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = M13CheckboxFlatController.swift; path = Sources/Managers/M13CheckboxFlatController.swift; sourceTree = "<group>"; };
+		2C0631196C63A350B77EA54908BCE8EC /* M13Checkbox.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = M13Checkbox.modulemap; sourceTree = "<group>"; };
+		3419714F0CF1DF3E8114B47D7F4050A2 /* M13CheckboxBounceController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = M13CheckboxBounceController.swift; path = Sources/Managers/M13CheckboxBounceController.swift; sourceTree = "<group>"; };
+		369464E2D560E1D8403DC62F7F9F96F1 /* IGColorPicker.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = IGColorPicker.framework; path = IGColorPicker.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		36F1590399397B09F6873CD592B3A779 /* Pods-AwesomeHairColor.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-AwesomeHairColor.debug.xcconfig"; sourceTree = "<group>"; };
+		3749CD9445CDBA1CA86CE4255B172A85 /* IGColorPicker-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "IGColorPicker-umbrella.h"; sourceTree = "<group>"; };
+		3838F9FE3306BA53192E453A5F0A6CB8 /* FritzManagedModel.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FritzManagedModel.framework; path = Frameworks/FritzManagedModel.framework; sourceTree = "<group>"; };
+		477DE2B8957D39035609017FBD2D3BDC /* FritzVisionHairSegmentationModelFast.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = FritzVisionHairSegmentationModelFast.xcconfig; sourceTree = "<group>"; };
+		4C7A542953D962909AB98547CA23F991 /* IGColorPicker.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = IGColorPicker.modulemap; sourceTree = "<group>"; };
+		57BB6F7C3EC30F164369AF70B96F4718 /* ColorPickerCell.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ColorPickerCell.swift; path = IGColorPicker/Classes/View/ColorPickerCell.swift; sourceTree = "<group>"; };
+		5984D64F310E36E5AC2680C028190A9C /* Fritz.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Fritz.framework; path = Frameworks/Fritz.framework; sourceTree = "<group>"; };
+		598E3E9638D3F72AE2A6AA4D25EAD9EF /* CoreMLHelpers.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMLHelpers.framework; path = Frameworks/CoreMLHelpers.framework; sourceTree = "<group>"; };
+		5A639D3B341C3A7203344C0944AD7DE5 /* Pods-AwesomeHairColor-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-AwesomeHairColor-acknowledgements.plist"; sourceTree = "<group>"; };
+		5CE79C5BF20743404E59BEFD080A364D /* M13Checkbox.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = M13Checkbox.framework; path = M13Checkbox.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5DD86A661EF88A092A4074EDC7CBEDFC /* M13Checkbox-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "M13Checkbox-dummy.m"; sourceTree = "<group>"; };
+		5DED68333C2D31BA4B5259B71A3F32E6 /* Pods-AwesomeHairColor-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-AwesomeHairColor-Info.plist"; sourceTree = "<group>"; };
+		6085B184E51A9225F049FC3335324C5C /* Pods_AwesomeHairColor.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_AwesomeHairColor.framework; path = "Pods-AwesomeHairColor.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		75C1D2F09C840A776F70183808713514 /* M13CheckboxStrokeController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = M13CheckboxStrokeController.swift; path = Sources/Managers/M13CheckboxStrokeController.swift; sourceTree = "<group>"; };
+		78F21228E3BD259701B57D6147CDB5EF /* FritzVision.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FritzVision.framework; path = Frameworks/FritzVision.framework; sourceTree = "<group>"; };
+		7DBFAF4C313D8729E56CBDF62618A7CC /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
+		7FDEA41AD8D81B4FB84C70CD26A2EA7C /* M13Checkbox.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = M13Checkbox.xcconfig; sourceTree = "<group>"; };
+		812B16BAF1946F2490B3F9228F5A7E34 /* M13CheckboxRadioPathGenerator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = M13CheckboxRadioPathGenerator.swift; path = Sources/Paths/M13CheckboxRadioPathGenerator.swift; sourceTree = "<group>"; };
+		81C00FCA43F2768240BE303AB57BBB50 /* Pods-AwesomeHairColor-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-AwesomeHairColor-umbrella.h"; sourceTree = "<group>"; };
+		85BC06A923C69AA3A6DE621B088DE405 /* Pods-AwesomeHairColor-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-AwesomeHairColor-frameworks.sh"; sourceTree = "<group>"; };
+		8609519BC20085DC6C369DB338A7CF5A /* DefaultValues.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DefaultValues.swift; path = IGColorPicker/Classes/DefaultValues.swift; sourceTree = "<group>"; };
+		88A7DEA3BB9C4ECE46BC7EF8D3531F4F /* M13Checkbox-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "M13Checkbox-umbrella.h"; sourceTree = "<group>"; };
+		891E80923D3BCE8F78270D6930EF48D3 /* M13Checkbox-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "M13Checkbox-prefix.pch"; sourceTree = "<group>"; };
+		8C5C489ABBE74FAB1A313759F607DE75 /* M13Checkbox+IB.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "M13Checkbox+IB.swift"; path = "Sources/M13Checkbox+IB.swift"; sourceTree = "<group>"; };
+		8EE0B3678A66445C8D65FD220E07DE08 /* ColorPickerViewDelegateFlowLayout.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ColorPickerViewDelegateFlowLayout.swift; path = IGColorPicker/Classes/Protocol/ColorPickerViewDelegateFlowLayout.swift; sourceTree = "<group>"; };
+		9540DAE4217E0D5DA4D1337B5398E30F /* Pods-AwesomeHairColor-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-AwesomeHairColor-dummy.m"; sourceTree = "<group>"; };
+		95DF68C5B978E4B4A87335E422FF4D37 /* M13CheckboxGestureRecognizer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = M13CheckboxGestureRecognizer.swift; path = Sources/M13CheckboxGestureRecognizer.swift; sourceTree = "<group>"; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		A6B01BA0D669A2A5FABA8D9E09CC6A6C /* Pods-AwesomeHairColor-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-AwesomeHairColor-acknowledgements.markdown"; sourceTree = "<group>"; };
+		A95A8B4D8E73E9B642E6F9EF6F2EE483 /* M13CheckboxDotController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = M13CheckboxDotController.swift; path = Sources/Managers/M13CheckboxDotController.swift; sourceTree = "<group>"; };
+		AB40402A5F71565D278F172D9C5D2BF8 /* M13CheckboxController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = M13CheckboxController.swift; path = Sources/M13CheckboxController.swift; sourceTree = "<group>"; };
+		AF3725329D513AE9F8D503CB54CAE3B6 /* DefaultValues.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DefaultValues.swift; path = Sources/DefaultValues.swift; sourceTree = "<group>"; };
+		B05C6C07A481A55753BDE38203445188 /* M13Checkbox.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = M13Checkbox.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B0ADC9DBF687B938EFF46AE1DD80B9FB /* M13CheckboxAnimationGenerator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = M13CheckboxAnimationGenerator.swift; path = Sources/M13CheckboxAnimationGenerator.swift; sourceTree = "<group>"; };
+		B1B15E16A0F33A0958F88DE922DCE5FD /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/CoreGraphics.framework; sourceTree = DEVELOPER_DIR; };
+		B556076667A848081B6C4191C7384F7C /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		B73D0EEB8C7D0B374B6D34700B01CD17 /* M13Checkbox.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = M13Checkbox.swift; path = Sources/M13Checkbox.swift; sourceTree = "<group>"; };
+		BEE8601FE4B6AAD966D500CAC9570286 /* Pods-AwesomeHairColor.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-AwesomeHairColor.release.xcconfig"; sourceTree = "<group>"; };
+		C35F60536B3D339931E7413D00E25C64 /* M13CheckboxExpandController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = M13CheckboxExpandController.swift; path = Sources/Managers/M13CheckboxExpandController.swift; sourceTree = "<group>"; };
+		C9593F48F4F8766B113B35648017DBD4 /* IGColorPicker-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "IGColorPicker-prefix.pch"; sourceTree = "<group>"; };
+		CF7B9281F68397546C6A1849191868C7 /* M13CheckboxAddRemovePathGenerator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = M13CheckboxAddRemovePathGenerator.swift; path = Sources/Paths/M13CheckboxAddRemovePathGenerator.swift; sourceTree = "<group>"; };
+		D880CC748F9C699584BFEF7717DA350C /* FritzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FritzCore.framework; path = Frameworks/FritzCore.framework; sourceTree = "<group>"; };
+		DA26BD9949B223B3C6DFDCB4D82D1D1E /* M13CheckboxDisclosurePathGenerator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = M13CheckboxDisclosurePathGenerator.swift; path = Sources/Paths/M13CheckboxDisclosurePathGenerator.swift; sourceTree = "<group>"; };
+		DAAE7C8DB1A08ADFE8FAF2A84C05C84E /* UIColor+Extension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIColor+Extension.swift"; path = "IGColorPicker/Classes/Extension/UIColor+Extension.swift"; sourceTree = "<group>"; };
+		DC0514FB32E1045428765C043F8177F7 /* M13CheckboxFillController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = M13CheckboxFillController.swift; path = Sources/Managers/M13CheckboxFillController.swift; sourceTree = "<group>"; };
+		E9751673B76C7F8354471C60763254D0 /* FritzVisionHairSegmentationModelFast.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FritzVisionHairSegmentationModelFast.framework; path = Frameworks/FritzVisionHairSegmentationModelFast.framework; sourceTree = "<group>"; };
+		E9F1C1E44335E479D1651E240296BB62 /* FritzBase.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = FritzBase.xcconfig; sourceTree = "<group>"; };
+		FC8C17C0EB8AD0A4D6EE0F1B7A19B596 /* M13CheckboxCheckPathGenerator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = M13CheckboxCheckPathGenerator.swift; path = Sources/Paths/M13CheckboxCheckPathGenerator.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		5D1D49812C2F7D8070972FE1826530FB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				23A263255B6EFDD46330E29E1F40B7E1 /* CoreGraphics.framework in Frameworks */,
+				6E3B6CDC0E81F85823E58AB72A58C6EC /* Foundation.framework in Frameworks */,
+				668EAECD33445BDF94D40582FAC8310E /* UIKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7AE70B6652F967DCFBC935BE37358984 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0890C4FCCD8694901A86377642907929 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BAA9220488FA851E994F20F17F99DB4A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7D7320E54ED74F035C71178A4508FAA5 /* Foundation.framework in Frameworks */,
+				7F5190775C2ED8906A109184913D9066 /* M13Checkbox.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		09207E053643E7AC8E99C64BCAAAF341 /* ManagedModel */ = {
+			isa = PBXGroup;
+			children = (
+				346D3FC71499059E726BFF46FFD8F9B3 /* Frameworks */,
+			);
+			name = ManagedModel;
+			sourceTree = "<group>";
+		};
+		09301075BA707C02C2488D80BFF850DB /* FritzVisionHairSegmentationModelFast */ = {
+			isa = PBXGroup;
+			children = (
+				3B17D69372D9BFAB4294ACAA888D7840 /* Frameworks */,
+				BE8D1039F3B32C47F7474428DC53FCC5 /* Support Files */,
+			);
+			name = FritzVisionHairSegmentationModelFast;
+			path = FritzVisionHairSegmentationModelFast;
+			sourceTree = "<group>";
+		};
+		0BB682A9E3AEC53A1F57317EAE3D32E9 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B05C6C07A481A55753BDE38203445188 /* M13Checkbox.framework */,
+				204EEF6440DAA5E8D4CE9B1EE88765FD /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		16EC4A68791F74ACA3A616F5E833C9BA /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				E9F1C1E44335E479D1651E240296BB62 /* FritzBase.xcconfig */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/FritzBase";
+			sourceTree = "<group>";
+		};
+		204EEF6440DAA5E8D4CE9B1EE88765FD /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				B1B15E16A0F33A0958F88DE922DCE5FD /* CoreGraphics.framework */,
+				B556076667A848081B6C4191C7384F7C /* Foundation.framework */,
+				7DBFAF4C313D8729E56CBDF62618A7CC /* UIKit.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		346D3FC71499059E726BFF46FFD8F9B3 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3838F9FE3306BA53192E453A5F0A6CB8 /* FritzManagedModel.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		3B17D69372D9BFAB4294ACAA888D7840 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E9751673B76C7F8354471C60763254D0 /* FritzVisionHairSegmentationModelFast.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		3CF92B93D5F9618107F552033262D7A0 /* FritzBase */ = {
+			isa = PBXGroup;
+			children = (
+				3E9AD30489BDAC0F260FE0DF39C563B2 /* Core */,
+				C6D28DB08FCCF05D0E07F0488FAF4037 /* CoreMLHelpers */,
+				09207E053643E7AC8E99C64BCAAAF341 /* ManagedModel */,
+				16EC4A68791F74ACA3A616F5E833C9BA /* Support Files */,
+				8ED85B3B7740D5D8BBEA8233902E5425 /* Vision */,
+			);
+			name = FritzBase;
+			path = FritzBase;
+			sourceTree = "<group>";
+		};
+		3E9AD30489BDAC0F260FE0DF39C563B2 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				C859AF13C770277AE5B326C4A2BC8626 /* Frameworks */,
+			);
+			name = Core;
+			sourceTree = "<group>";
+		};
+		62500C62E01D3B819660FADF9A8A0C25 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				598E3E9638D3F72AE2A6AA4D25EAD9EF /* CoreMLHelpers.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		8213CE6FB28506E4348CBB48C6AC77D5 /* Fritz */ = {
+			isa = PBXGroup;
+			children = (
+				FE6358E97D863A7EF07D8FB6DFF5BB17 /* Support Files */,
+			);
+			name = Fritz;
+			path = Fritz;
+			sourceTree = "<group>";
+		};
+		87C947D2F5041BAF8D5752B235F08A22 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				78F21228E3BD259701B57D6147CDB5EF /* FritzVision.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		8ED85B3B7740D5D8BBEA8233902E5425 /* Vision */ = {
+			isa = PBXGroup;
+			children = (
+				87C947D2F5041BAF8D5752B235F08A22 /* Frameworks */,
+			);
+			name = Vision;
+			sourceTree = "<group>";
+		};
+		8FB4C47CD5B27DEF5A0436F90B9FC8B3 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				369464E2D560E1D8403DC62F7F9F96F1 /* IGColorPicker.framework */,
+				5CE79C5BF20743404E59BEFD080A364D /* M13Checkbox.framework */,
+				6085B184E51A9225F049FC3335324C5C /* Pods_AwesomeHairColor.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		9285CABA1FD8D077DBC697EAA6ACEB38 /* M13Checkbox */ = {
+			isa = PBXGroup;
+			children = (
+				AF3725329D513AE9F8D503CB54CAE3B6 /* DefaultValues.swift */,
+				B73D0EEB8C7D0B374B6D34700B01CD17 /* M13Checkbox.swift */,
+				8C5C489ABBE74FAB1A313759F607DE75 /* M13Checkbox+IB.swift */,
+				CF7B9281F68397546C6A1849191868C7 /* M13CheckboxAddRemovePathGenerator.swift */,
+				B0ADC9DBF687B938EFF46AE1DD80B9FB /* M13CheckboxAnimationGenerator.swift */,
+				3419714F0CF1DF3E8114B47D7F4050A2 /* M13CheckboxBounceController.swift */,
+				FC8C17C0EB8AD0A4D6EE0F1B7A19B596 /* M13CheckboxCheckPathGenerator.swift */,
+				AB40402A5F71565D278F172D9C5D2BF8 /* M13CheckboxController.swift */,
+				DA26BD9949B223B3C6DFDCB4D82D1D1E /* M13CheckboxDisclosurePathGenerator.swift */,
+				A95A8B4D8E73E9B642E6F9EF6F2EE483 /* M13CheckboxDotController.swift */,
+				C35F60536B3D339931E7413D00E25C64 /* M13CheckboxExpandController.swift */,
+				2688814A64F9AA58C7F95295CDB65204 /* M13CheckboxFadeController.swift */,
+				DC0514FB32E1045428765C043F8177F7 /* M13CheckboxFillController.swift */,
+				293ACC8F7F696433DB22F3F589E5DF87 /* M13CheckboxFlatController.swift */,
+				95DF68C5B978E4B4A87335E422FF4D37 /* M13CheckboxGestureRecognizer.swift */,
+				0DA85BB9C460B8EA6B0D87ED0D89F342 /* M13CheckboxPathGenerator.swift */,
+				812B16BAF1946F2490B3F9228F5A7E34 /* M13CheckboxRadioPathGenerator.swift */,
+				0D2A357D36E6B588F3779ECB8070F2A5 /* M13CheckboxSpiralController.swift */,
+				75C1D2F09C840A776F70183808713514 /* M13CheckboxStrokeController.swift */,
+				DA07A2012C032A5D4F56ADA492438152 /* Support Files */,
+			);
+			name = M13Checkbox;
+			path = M13Checkbox;
+			sourceTree = "<group>";
+		};
+		A1ABD0C042E42CA8A8ABC77FAE8F7F32 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				D2E05C43D5FD590B1FE867544E583A1A /* Pods-AwesomeHairColor */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		A7B63171063DA51C75725917384A9443 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				4C7A542953D962909AB98547CA23F991 /* IGColorPicker.modulemap */,
+				0A7A8CF2B48E992C7754FB8E57965D4E /* IGColorPicker.xcconfig */,
+				16E77F9B603A822EBBBFF641887A3816 /* IGColorPicker-dummy.m */,
+				1628542AC5025CAD36F0A72A66193B8B /* IGColorPicker-Info.plist */,
+				C9593F48F4F8766B113B35648017DBD4 /* IGColorPicker-prefix.pch */,
+				3749CD9445CDBA1CA86CE4255B172A85 /* IGColorPicker-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/IGColorPicker";
+			sourceTree = "<group>";
+		};
+		A942E6072EDCFA43206CD676A27E5D3B /* IGColorPicker */ = {
+			isa = PBXGroup;
+			children = (
+				57BB6F7C3EC30F164369AF70B96F4718 /* ColorPickerCell.swift */,
+				191C3D7EE59A83397A4A8CFC20DC5E78 /* ColorPickerView.swift */,
+				0ABDE0FF2DC42CA7919E7BDB49C2F559 /* ColorPickerViewDelegate.swift */,
+				8EE0B3678A66445C8D65FD220E07DE08 /* ColorPickerViewDelegateFlowLayout.swift */,
+				8609519BC20085DC6C369DB338A7CF5A /* DefaultValues.swift */,
+				DAAE7C8DB1A08ADFE8FAF2A84C05C84E /* UIColor+Extension.swift */,
+				A7B63171063DA51C75725917384A9443 /* Support Files */,
+			);
+			name = IGColorPicker;
+			path = IGColorPicker;
+			sourceTree = "<group>";
+		};
+		BE8D1039F3B32C47F7474428DC53FCC5 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				477DE2B8957D39035609017FBD2D3BDC /* FritzVisionHairSegmentationModelFast.xcconfig */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/FritzVisionHairSegmentationModelFast";
+			sourceTree = "<group>";
+		};
+		C350E21C8942C79F00FCC5D3201DC23C /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				8213CE6FB28506E4348CBB48C6AC77D5 /* Fritz */,
+				3CF92B93D5F9618107F552033262D7A0 /* FritzBase */,
+				09301075BA707C02C2488D80BFF850DB /* FritzVisionHairSegmentationModelFast */,
+				A942E6072EDCFA43206CD676A27E5D3B /* IGColorPicker */,
+				9285CABA1FD8D077DBC697EAA6ACEB38 /* M13Checkbox */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		C6D28DB08FCCF05D0E07F0488FAF4037 /* CoreMLHelpers */ = {
+			isa = PBXGroup;
+			children = (
+				62500C62E01D3B819660FADF9A8A0C25 /* Frameworks */,
+			);
+			name = CoreMLHelpers;
+			sourceTree = "<group>";
+		};
+		C859AF13C770277AE5B326C4A2BC8626 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5984D64F310E36E5AC2680C028190A9C /* Fritz.framework */,
+				D880CC748F9C699584BFEF7717DA350C /* FritzCore.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		CF1408CF629C7361332E53B88F7BD30C = {
+			isa = PBXGroup;
+			children = (
+				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
+				0BB682A9E3AEC53A1F57317EAE3D32E9 /* Frameworks */,
+				C350E21C8942C79F00FCC5D3201DC23C /* Pods */,
+				8FB4C47CD5B27DEF5A0436F90B9FC8B3 /* Products */,
+				A1ABD0C042E42CA8A8ABC77FAE8F7F32 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		D2E05C43D5FD590B1FE867544E583A1A /* Pods-AwesomeHairColor */ = {
+			isa = PBXGroup;
+			children = (
+				12C6A57726296A22A0BD59D98A2E5A83 /* Pods-AwesomeHairColor.modulemap */,
+				A6B01BA0D669A2A5FABA8D9E09CC6A6C /* Pods-AwesomeHairColor-acknowledgements.markdown */,
+				5A639D3B341C3A7203344C0944AD7DE5 /* Pods-AwesomeHairColor-acknowledgements.plist */,
+				9540DAE4217E0D5DA4D1337B5398E30F /* Pods-AwesomeHairColor-dummy.m */,
+				85BC06A923C69AA3A6DE621B088DE405 /* Pods-AwesomeHairColor-frameworks.sh */,
+				5DED68333C2D31BA4B5259B71A3F32E6 /* Pods-AwesomeHairColor-Info.plist */,
+				81C00FCA43F2768240BE303AB57BBB50 /* Pods-AwesomeHairColor-umbrella.h */,
+				36F1590399397B09F6873CD592B3A779 /* Pods-AwesomeHairColor.debug.xcconfig */,
+				BEE8601FE4B6AAD966D500CAC9570286 /* Pods-AwesomeHairColor.release.xcconfig */,
+			);
+			name = "Pods-AwesomeHairColor";
+			path = "Target Support Files/Pods-AwesomeHairColor";
+			sourceTree = "<group>";
+		};
+		DA07A2012C032A5D4F56ADA492438152 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				2C0631196C63A350B77EA54908BCE8EC /* M13Checkbox.modulemap */,
+				7FDEA41AD8D81B4FB84C70CD26A2EA7C /* M13Checkbox.xcconfig */,
+				5DD86A661EF88A092A4074EDC7CBEDFC /* M13Checkbox-dummy.m */,
+				1C25C4C1600D292C7E2B0BC43002C4E9 /* M13Checkbox-Info.plist */,
+				891E80923D3BCE8F78270D6930EF48D3 /* M13Checkbox-prefix.pch */,
+				88A7DEA3BB9C4ECE46BC7EF8D3531F4F /* M13Checkbox-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/M13Checkbox";
+			sourceTree = "<group>";
+		};
+		FE6358E97D863A7EF07D8FB6DFF5BB17 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				0CDB57C67FD2AE5A3684C7CD75559EA7 /* Fritz.xcconfig */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/Fritz";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		0E5E8EAF7C2D16EBAB78880214441C1F /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CEA58AA496E50293351846F485ED1E56 /* Pods-AwesomeHairColor-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FBAF7871CC983ACBA0F9AD83C2D4BB9C /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3DA07DFC44F8781C43CEF13FA981122F /* M13Checkbox-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FF8A654131EACBFE8E6275E3029105E9 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9EE1FDEFDD39B68FC45914834243E3F6 /* IGColorPicker-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		6D8D2751C5F0C2E845398BA4D7969D44 /* IGColorPicker */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5EAB6CC25C4F26A3ABA2420835CF9EE3 /* Build configuration list for PBXNativeTarget "IGColorPicker" */;
+			buildPhases = (
+				FF8A654131EACBFE8E6275E3029105E9 /* Headers */,
+				7E94F0595D49B7150582F097A14B9B30 /* Sources */,
+				BAA9220488FA851E994F20F17F99DB4A /* Frameworks */,
+				5FC6DCB16CF696F3BBFF8903C94621D4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E94C04CB22A33CE8A31134E748FA81ED /* PBXTargetDependency */,
+			);
+			name = IGColorPicker;
+			productName = IGColorPicker;
+			productReference = 369464E2D560E1D8403DC62F7F9F96F1 /* IGColorPicker.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		7111E54EAE43E89F451A75076C3525ED /* M13Checkbox */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = ED7DD20DD3621EE7C03FA69A9B257875 /* Build configuration list for PBXNativeTarget "M13Checkbox" */;
+			buildPhases = (
+				FBAF7871CC983ACBA0F9AD83C2D4BB9C /* Headers */,
+				A18D6945EF01597B20E75B01F302FAFC /* Sources */,
+				5D1D49812C2F7D8070972FE1826530FB /* Frameworks */,
+				87350EB5055F90CB5A756D6A63FB551A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = M13Checkbox;
+			productName = M13Checkbox;
+			productReference = 5CE79C5BF20743404E59BEFD080A364D /* M13Checkbox.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		E9F974C2D3839BB947DE9B68B2FC435E /* Pods-AwesomeHairColor */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7E074022E873E609DA58D6484EA4D4A2 /* Build configuration list for PBXNativeTarget "Pods-AwesomeHairColor" */;
+			buildPhases = (
+				0E5E8EAF7C2D16EBAB78880214441C1F /* Headers */,
+				3C493B096268CCA5C8F229DB934F36EC /* Sources */,
+				7AE70B6652F967DCFBC935BE37358984 /* Frameworks */,
+				11B28D041C6A950F4F27C852B962278A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				AACA3C1FFC161CDF16A1CB3019A60A7C /* PBXTargetDependency */,
+				14895B922419BEA2AEBE35B1BDA34782 /* PBXTargetDependency */,
+				CB9D7A1C36958E48871CC4DD5A577F2A /* PBXTargetDependency */,
+				378EC7BDD2464D42B960A8132DF01A3E /* PBXTargetDependency */,
+				4B6CEC98C95F124140A95F9EC6CEE667 /* PBXTargetDependency */,
+			);
+			name = "Pods-AwesomeHairColor";
+			productName = "Pods-AwesomeHairColor";
+			productReference = 6085B184E51A9225F049FC3335324C5C /* Pods_AwesomeHairColor.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BFDFE7DC352907FC980B868725387E98 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1100;
+				LastUpgradeCheck = 1100;
+			};
+			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 10.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
+			productRefGroup = 8FB4C47CD5B27DEF5A0436F90B9FC8B3 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FD4D230B022BCBFF67A5E99BA7AA380B /* Fritz */,
+				D3AE921386E3F53A09FA4AE6610DCA6A /* FritzBase */,
+				BA38F7C718B6EB0F27C136D47979AFC0 /* FritzVisionHairSegmentationModelFast */,
+				6D8D2751C5F0C2E845398BA4D7969D44 /* IGColorPicker */,
+				7111E54EAE43E89F451A75076C3525ED /* M13Checkbox */,
+				E9F974C2D3839BB947DE9B68B2FC435E /* Pods-AwesomeHairColor */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		11B28D041C6A950F4F27C852B962278A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5FC6DCB16CF696F3BBFF8903C94621D4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		87350EB5055F90CB5A756D6A63FB551A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3C493B096268CCA5C8F229DB934F36EC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9BB0A051DB100FFA00C3BF14F614CEA7 /* Pods-AwesomeHairColor-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7E94F0595D49B7150582F097A14B9B30 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				264D38C04FB2A8AAC6DD94AEEDE6D33E /* ColorPickerCell.swift in Sources */,
+				224E7A8EC9F1222531E3A0C3977FCDAB /* ColorPickerView.swift in Sources */,
+				845FFB8F470D34D9D2B1EBF240E153A2 /* ColorPickerViewDelegate.swift in Sources */,
+				B318B688B65B56BC840B03962D2DE393 /* ColorPickerViewDelegateFlowLayout.swift in Sources */,
+				A7F238E4EA685E9A685F4A6AE1568549 /* DefaultValues.swift in Sources */,
+				4147AAEFC99B3FF5EE4792FEC4A009F5 /* IGColorPicker-dummy.m in Sources */,
+				551ED8009D7A001E38FD3C99D25F5CBD /* UIColor+Extension.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A18D6945EF01597B20E75B01F302FAFC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F8B8496663DA7512C8DCDA1DCA05C60E /* DefaultValues.swift in Sources */,
+				4A107B86C255F6A49C6616D546B40585 /* M13Checkbox+IB.swift in Sources */,
+				7F5C1F4F2BE2212FCEE08299124361F4 /* M13Checkbox-dummy.m in Sources */,
+				0126B11AAF31F96644C6F82064721027 /* M13Checkbox.swift in Sources */,
+				A2E15A3C59A1B26BC369820D7914C739 /* M13CheckboxAddRemovePathGenerator.swift in Sources */,
+				12EDD45814D8150755D0B6B9024CEFCD /* M13CheckboxAnimationGenerator.swift in Sources */,
+				1BB92ED1C2A38E73E82956BE00F0C4B7 /* M13CheckboxBounceController.swift in Sources */,
+				EE5DDEFF888762F44404E30889EFCF70 /* M13CheckboxCheckPathGenerator.swift in Sources */,
+				E6FFE305826BE9881BB19196880D5A74 /* M13CheckboxController.swift in Sources */,
+				F00EA7040B010ACDE2EA7011D7529A11 /* M13CheckboxDisclosurePathGenerator.swift in Sources */,
+				128FA21D7EFAB80FC1F2B851D4D6450A /* M13CheckboxDotController.swift in Sources */,
+				2265A020B0727EB38FA75523D170B51A /* M13CheckboxExpandController.swift in Sources */,
+				BC8F9F3A3C4B4E685AD494B3A3DC4BD7 /* M13CheckboxFadeController.swift in Sources */,
+				16860195B5F7EA0E583C7B52FEE745FE /* M13CheckboxFillController.swift in Sources */,
+				9F6A924646BC2E5C790B822DFA3D6DF3 /* M13CheckboxFlatController.swift in Sources */,
+				A4E3AA395F2CC53A35AFC0FA78ABE33F /* M13CheckboxGestureRecognizer.swift in Sources */,
+				6A7A384A3F24F41E61C5EC59DC89FB2B /* M13CheckboxPathGenerator.swift in Sources */,
+				D7B3528A3103B65FA92AAA30AEF7B8D1 /* M13CheckboxRadioPathGenerator.swift in Sources */,
+				88FA28B34E671180474152FCC00CDE3C /* M13CheckboxSpiralController.swift in Sources */,
+				F78870AB77C739F4971E831CD98D3696 /* M13CheckboxStrokeController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		14895B922419BEA2AEBE35B1BDA34782 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = FritzBase;
+			target = D3AE921386E3F53A09FA4AE6610DCA6A /* FritzBase */;
+			targetProxy = CCEDBC86FB8664F6250D91C83EC7BEAD /* PBXContainerItemProxy */;
+		};
+		378EC7BDD2464D42B960A8132DF01A3E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = IGColorPicker;
+			target = 6D8D2751C5F0C2E845398BA4D7969D44 /* IGColorPicker */;
+			targetProxy = E7A0E260788FEB760756510181524F85 /* PBXContainerItemProxy */;
+		};
+		4B6CEC98C95F124140A95F9EC6CEE667 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = M13Checkbox;
+			target = 7111E54EAE43E89F451A75076C3525ED /* M13Checkbox */;
+			targetProxy = D134A87C8335D412CF7FF02A461DE7FD /* PBXContainerItemProxy */;
+		};
+		739A85B58BA020DD8603E87ECFE5A788 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = FritzVisionHairSegmentationModelFast;
+			target = BA38F7C718B6EB0F27C136D47979AFC0 /* FritzVisionHairSegmentationModelFast */;
+			targetProxy = D65F14D2BF5E169A2ADA91A8D799826A /* PBXContainerItemProxy */;
+		};
+		A42CB66B5815A3D9B734785E655B6A4F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = FritzBase;
+			target = D3AE921386E3F53A09FA4AE6610DCA6A /* FritzBase */;
+			targetProxy = 364384228B0FD6B44343EDC96A36C772 /* PBXContainerItemProxy */;
+		};
+		AACA3C1FFC161CDF16A1CB3019A60A7C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Fritz;
+			target = FD4D230B022BCBFF67A5E99BA7AA380B /* Fritz */;
+			targetProxy = A35AE0B47C9832708377DA76DD6B17C5 /* PBXContainerItemProxy */;
+		};
+		CB9D7A1C36958E48871CC4DD5A577F2A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = FritzVisionHairSegmentationModelFast;
+			target = BA38F7C718B6EB0F27C136D47979AFC0 /* FritzVisionHairSegmentationModelFast */;
+			targetProxy = 43272D37516B5466555571A4A7E5B2DE /* PBXContainerItemProxy */;
+		};
+		D290D38928D3486A7022DE9D788FFACA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = FritzBase;
+			target = D3AE921386E3F53A09FA4AE6610DCA6A /* FritzBase */;
+			targetProxy = A0682E59E21CBA0255151F636AD1D70F /* PBXContainerItemProxy */;
+		};
+		E94C04CB22A33CE8A31134E748FA81ED /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = M13Checkbox;
+			target = 7111E54EAE43E89F451A75076C3525ED /* M13Checkbox */;
+			targetProxy = DDB3003722DA5442EBEA6C3909A0449E /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		1384E907F0DFA631ECFF132F4BB73426 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0CDB57C67FD2AE5A3684C7CD75559EA7 /* Fritz.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		257497152829C177993B5EC99C1D227A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		43E8195770D6F689E67E9E6469CBA89B /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7FDEA41AD8D81B4FB84C70CD26A2EA7C /* M13Checkbox.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/M13Checkbox/M13Checkbox-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/M13Checkbox/M13Checkbox-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/M13Checkbox/M13Checkbox.modulemap";
+				PRODUCT_MODULE_NAME = M13Checkbox;
+				PRODUCT_NAME = M13Checkbox;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		4819020FD6EE56644A1B870B7038C6CD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E9F1C1E44335E479D1651E240296BB62 /* FritzBase.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		7069BA74639F168B0D52BFADCBDD1728 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 477DE2B8957D39035609017FBD2D3BDC /* FritzVisionHairSegmentationModelFast.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		80C2C9F70217E7E940FAED553FD0D0CA /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BEE8601FE4B6AAD966D500CAC9570286 /* Pods-AwesomeHairColor.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-AwesomeHairColor/Pods-AwesomeHairColor-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-AwesomeHairColor/Pods-AwesomeHairColor.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		CD16B1341F6CE36145DA9C481E84F39C /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E9F1C1E44335E479D1651E240296BB62 /* FritzBase.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		CFEA9D7DCBAD6B19AA173BD21A878A6E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 36F1590399397B09F6873CD592B3A779 /* Pods-AwesomeHairColor.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-AwesomeHairColor/Pods-AwesomeHairColor-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-AwesomeHairColor/Pods-AwesomeHairColor.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		D7BE0C9D7F64DDE14F0F04B9D553A72A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7FDEA41AD8D81B4FB84C70CD26A2EA7C /* M13Checkbox.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/M13Checkbox/M13Checkbox-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/M13Checkbox/M13Checkbox-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/M13Checkbox/M13Checkbox.modulemap";
+				PRODUCT_MODULE_NAME = M13Checkbox;
+				PRODUCT_NAME = M13Checkbox;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		DAE6A93FDEEC425AC7DDFAF6088C9C81 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0A7A8CF2B48E992C7754FB8E57965D4E /* IGColorPicker.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/IGColorPicker/IGColorPicker-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/IGColorPicker/IGColorPicker-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/IGColorPicker/IGColorPicker.modulemap";
+				PRODUCT_MODULE_NAME = IGColorPicker;
+				PRODUCT_NAME = IGColorPicker;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		DC89FA70B0638D28B1AC37D8453379A1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0CDB57C67FD2AE5A3684C7CD75559EA7 /* Fritz.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		DD8F832993327D1DD8046C3CBCBD97CD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		E53385A6E71EEE85CBB0684C39D2EE0F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0A7A8CF2B48E992C7754FB8E57965D4E /* IGColorPicker.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/IGColorPicker/IGColorPicker-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/IGColorPicker/IGColorPicker-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/IGColorPicker/IGColorPicker.modulemap";
+				PRODUCT_MODULE_NAME = IGColorPicker;
+				PRODUCT_NAME = IGColorPicker;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		EFFB984A5BCBA67861F5F64720D2F1CC /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 477DE2B8957D39035609017FBD2D3BDC /* FritzVisionHairSegmentationModelFast.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		14CF215E8E60C1694F46235809C19DDD /* Build configuration list for PBXAggregateTarget "FritzBase" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4819020FD6EE56644A1B870B7038C6CD /* Debug */,
+				CD16B1341F6CE36145DA9C481E84F39C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DD8F832993327D1DD8046C3CBCBD97CD /* Debug */,
+				257497152829C177993B5EC99C1D227A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		53CEC9D2DB32901F8C7F3C9497874F5C /* Build configuration list for PBXAggregateTarget "Fritz" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1384E907F0DFA631ECFF132F4BB73426 /* Debug */,
+				DC89FA70B0638D28B1AC37D8453379A1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		580EA9CDD4B325CC522258628A137311 /* Build configuration list for PBXAggregateTarget "FritzVisionHairSegmentationModelFast" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7069BA74639F168B0D52BFADCBDD1728 /* Debug */,
+				EFFB984A5BCBA67861F5F64720D2F1CC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5EAB6CC25C4F26A3ABA2420835CF9EE3 /* Build configuration list for PBXNativeTarget "IGColorPicker" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E53385A6E71EEE85CBB0684C39D2EE0F /* Debug */,
+				DAE6A93FDEEC425AC7DDFAF6088C9C81 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7E074022E873E609DA58D6484EA4D4A2 /* Build configuration list for PBXNativeTarget "Pods-AwesomeHairColor" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CFEA9D7DCBAD6B19AA173BD21A878A6E /* Debug */,
+				80C2C9F70217E7E940FAED553FD0D0CA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		ED7DD20DD3621EE7C03FA69A9B257875 /* Build configuration list for PBXNativeTarget "M13Checkbox" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D7BE0C9D7F64DDE14F0F04B9D553A72A /* Debug */,
+				43E8195770D6F689E67E9E6469CBA89B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+}

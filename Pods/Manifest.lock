@@ -1,0 +1,44 @@
+PODS:
+  - Fritz (5.0.2):
+    - Fritz/Vision (= 5.0.2)
+  - Fritz/Vision (5.0.2):
+    - FritzBase/Vision (= 5.0.2)
+  - Fritz/VisionSegmentationModel/Hair/Fast (5.0.2):
+    - FritzVisionHairSegmentationModelFast (~> 5.0.1)
+  - FritzBase/Core (5.0.2)
+  - FritzBase/CoreMLHelpers (5.0.2)
+  - FritzBase/ManagedModel (5.0.2):
+    - FritzBase/Core (= 5.0.2)
+  - FritzBase/Vision (5.0.2):
+    - FritzBase/Core (= 5.0.2)
+    - FritzBase/CoreMLHelpers (= 5.0.2)
+    - FritzBase/ManagedModel (= 5.0.2)
+  - FritzVisionHairSegmentationModelFast (5.0.1):
+    - FritzBase/Vision (~> 5.0.1)
+  - IGColorPicker (0.4.2):
+    - M13Checkbox (~> 3.2.0)
+  - M13Checkbox (3.2.2)
+
+DEPENDENCIES:
+  - Fritz (~> 5.0.2)
+  - Fritz/VisionSegmentationModel/Hair/Fast
+  - IGColorPicker
+
+SPEC REPOS:
+  trunk:
+    - Fritz
+    - FritzBase
+    - FritzVisionHairSegmentationModelFast
+    - IGColorPicker
+    - M13Checkbox
+
+SPEC CHECKSUMS:
+  Fritz: 89d75a3705008fe851ef28437ab36f0cc7b3c100
+  FritzBase: 6c4074819a46851033316060c4194c17a61edf75
+  FritzVisionHairSegmentationModelFast: 2b9e40f8e6987ac2d7c903bd84fc07e5a83fc636
+  IGColorPicker: c6d43aa386a9fdc8f958f3bd4e5ab85905242c8a
+  M13Checkbox: a8c2491cfbbca10797925fd0b9154a782bf40d89
+
+PODFILE CHECKSUM: f21b017d39380f062193264086fc80145267800d
+
+COCOAPODS: 1.8.4
